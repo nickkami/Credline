@@ -1,9 +1,11 @@
 //Variáveis
 $vermelho: #FF3636;
+$vermelho-hover:#CE0000;
+$cinza-claro: #C8C9C9;
 
 
 
-body{background-color: #fbfbfb; color: #223755;font-size: 13px;}
+body{background-color: #fbfbfb; color: #223755;font-size: 13px; margin-bottom: 30px;}
 nav{padding-right: 15px;padding-left: 15px;margin-right: auto;margin-left: auto;background-color: #1B314F!important; min-height: 60px!important; display: inline-block; width: 100%;}
 .navbar-default .navbar-nav > li > a{color: #fff;}
 .navbar-default .navbar-nav li > a:hover{background-color: #0040FF;color: #fff;}
@@ -28,7 +30,8 @@ nav .nome-loja{padding: 10px 0 0 15px; font-size: 12px; color: #fff;}
 .status.aprovado{color: #54AFF2;}
 .status.negada{color: $vermelho;}
 .bt-vermelho{background-color: $vermelho; color: #fff;border-radius: 45px; font-size: 12px; font-weight: bold; text-transform: uppercase; padding: 10px 20px 8px 25px!important; margin-top: 5px;}
-.bt-vermelho:hover{background-color: #0040FF!important;color: #fff!important;}
+.bt-vermelho:hover{background-color: $vermelho-hover!important;color: #fff!important;}
+h3{font-weight: bold;}
 h4, .h4 {font-weight: bold; font-size: 18px;}
 .box{background-color: #fff; border-radius: 4px; webkit-box-shadow: 1px 3px 10px 1px rgba(0,0,0,.175); box-shadow: 1px 3px 10px 1px rgba(0,0,0,.175); display: inline-block; width: 100%;margin-top: 15px;
 padding: 30px 0 20px 0;  margin-bottom: 30px;}
@@ -51,10 +54,60 @@ padding: 15px 0 20px 0;  margin-bottom: 30px;}
 .table .glyphicon{font-size: 11px;}
 .glyphicon-chevron-up{color: $vermelho!important;}
 .dropdown-proposta{
-    right:140px!important;
+    right:160px!important;
     padding-right: 10px;
     padding-left: 10px;
     input{
         width: 200px;
     }
+    .label-loja{
+        margin-top: 10px;
+        color: $cinza-claro;
+    }
+    .btn.bt-vermelho{
+        padding-right: 27px!important;
+        &:hover{background-color:$vermelho-hover!important; color: #FFF;}
+    }
+}
+.form-custom{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    box-shadow: none;
+    border-radius: inherit;
+    background-color: #FBFBFB;
+    height: 40px;
+}
+
+.proposta-formulario{
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        font-size: 25px;
+        color: $cinza-claro!important;
+     }
+     ::-moz-placeholder { /* Firefox 19+ */
+         font-size: 25px;
+         color: $cinza-claro!important;
+     }
+     :-ms-input-placeholder { /* IE 10+ */
+         font-size: 25px;
+         color: $cinza-claro!important;
+     }   
+     :-moz-placeholder { /* Firefox 18- */
+         font-size: 25px;
+         color: $cinza-claro!important;
+     }
+    .input-cel{margin-top: 20px;}
+    .txt-cel{margin-top: 5px; color: $cinza-claro;}
+    .nascimento-cliente{margin-top: 40px;}
+    .input-nascimento{margin-top: 20px;}
+    .ocupacao-cliente{margin-top: 40px;}
+    select.form-custom{
+        margin-top:10px; 
+        font-size: 25px; 
+    }
+    .cep-cliente{margin-top: 40px;}
+    .txt-cep{margin-top: 5px;
+        a{text-decoration: underline;}
+    }
+    .botao-proximo{margin-top: 30px;}
 }

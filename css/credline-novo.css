@@ -1,7 +1,8 @@
 body {
   background-color: #fbfbfb;
   color: #223755;
-  font-size: 13px; }
+  font-size: 13px;
+  margin-bottom: 30px; }
 
 nav {
   padding-right: 15px;
@@ -102,8 +103,11 @@ nav .nome-loja {
   margin-top: 5px; }
 
 .bt-vermelho:hover {
-  background-color: #0040FF !important;
+  background-color: #CE0000 !important;
   color: #fff !important; }
+
+h3 {
+  font-weight: bold; }
 
 h4, .h4 {
   font-weight: bold;
@@ -179,10 +183,66 @@ h4, .h4 {
   color: #FF3636 !important; }
 
 .dropdown-proposta {
-  right: 140px !important;
+  right: 160px !important;
   padding-right: 10px;
   padding-left: 10px; }
   .dropdown-proposta input {
     width: 200px; }
+  .dropdown-proposta .label-loja {
+    margin-top: 10px;
+    color: #C8C9C9; }
+  .dropdown-proposta .btn.bt-vermelho {
+    padding-right: 27px !important; }
+    .dropdown-proposta .btn.bt-vermelho:hover {
+      background-color: #CE0000 !important;
+      color: #FFF; }
+
+.form-custom {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  box-shadow: none;
+  border-radius: inherit;
+  background-color: #FBFBFB;
+  height: 40px; }
+
+.proposta-formulario ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-size: 25px;
+  color: #C8C9C9 !important; }
+.proposta-formulario ::-moz-placeholder {
+  /* Firefox 19+ */
+  font-size: 25px;
+  color: #C8C9C9 !important; }
+.proposta-formulario :-ms-input-placeholder {
+  /* IE 10+ */
+  font-size: 25px;
+  color: #C8C9C9 !important; }
+.proposta-formulario :-moz-placeholder {
+  /* Firefox 18- */
+  font-size: 25px;
+  color: #C8C9C9 !important; }
+.proposta-formulario .input-cel {
+  margin-top: 20px; }
+.proposta-formulario .txt-cel {
+  margin-top: 5px;
+  color: #C8C9C9; }
+.proposta-formulario .nascimento-cliente {
+  margin-top: 40px; }
+.proposta-formulario .input-nascimento {
+  margin-top: 20px; }
+.proposta-formulario .ocupacao-cliente {
+  margin-top: 40px; }
+.proposta-formulario select.form-custom {
+  margin-top: 10px;
+  font-size: 25px; }
+.proposta-formulario .cep-cliente {
+  margin-top: 40px; }
+.proposta-formulario .txt-cep {
+  margin-top: 5px; }
+  .proposta-formulario .txt-cep a {
+    text-decoration: underline; }
+.proposta-formulario .botao-proximo {
+  margin-top: 30px; }
 
 /*# sourceMappingURL=credline-novo.css.map */
