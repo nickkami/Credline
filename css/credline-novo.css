@@ -1,6 +1,29 @@
+@font-face {
+  font-family: 'gotham_htfbold';
+  src: url("../fonts/gothamhtf-bold-webfont.woff2") format("woff2"), url("../fonts/gothamhtf-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'gotham_htfbook';
+  src: url("../fonts/gothamhtf-book-webfont.woff2") format("woff2"), url("../fonts/gothamhtf-book-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'gotham_htflight';
+  src: url("../fonts/gothamhtf-light-webfont.woff2") format("woff2"), url("../fonts/gothamhtf-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'gotham_htf';
+  src: url("../fonts/gothamhtf-medium-webfont.woff2") format("woff2"), url("../fonts/gothamhtf-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+* {
+  font-family: "gotham_htf","Helvetica Neue", "Helvetica", "Arial", "sans-serif"; }
+
 body {
   background-color: #fbfbfb;
-  color: #223755;
+  color: #142d4e;
   font-size: 13px;
   margin-bottom: 30px; }
 
@@ -80,6 +103,9 @@ nav .nome-loja {
   float: right;
   text-align: right; }
 
+a {
+  color: #53b0f2; }
+
 .table {
   font-size: 13px; }
 
@@ -99,7 +125,7 @@ nav .nome-loja {
   font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 10px 20px 8px 25px !important;
+  padding: 10px 20px 8px 20px !important;
   margin-top: 5px; }
 
 .bt-vermelho:hover {
@@ -107,11 +133,15 @@ nav .nome-loja {
   color: #fff !important; }
 
 h3 {
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 32px; }
 
 h4, .h4 {
   font-weight: bold;
   font-size: 18px; }
+
+h5 {
+  font-size: 16px; }
 
 .box {
   background-color: #fff;
@@ -190,7 +220,7 @@ h4, .h4 {
     width: 200px; }
   .dropdown-proposta .label-loja {
     margin-top: 10px;
-    color: #C8C9C9; }
+    color: #919191; }
   .dropdown-proposta .btn.bt-vermelho {
     padding-right: 27px !important; }
     .dropdown-proposta .btn.bt-vermelho:hover {
@@ -206,43 +236,73 @@ h4, .h4 {
   background-color: #FBFBFB;
   height: 40px; }
 
-.proposta-formulario ::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
-  font-size: 25px;
-  color: #C8C9C9 !important; }
-.proposta-formulario ::-moz-placeholder {
-  /* Firefox 19+ */
-  font-size: 25px;
-  color: #C8C9C9 !important; }
-.proposta-formulario :-ms-input-placeholder {
-  /* IE 10+ */
-  font-size: 25px;
-  color: #C8C9C9 !important; }
-.proposta-formulario :-moz-placeholder {
-  /* Firefox 18- */
-  font-size: 25px;
-  color: #C8C9C9 !important; }
-.proposta-formulario .input-cel {
-  margin-top: 20px; }
-.proposta-formulario .txt-cel {
-  margin-top: 5px;
-  color: #C8C9C9; }
-.proposta-formulario .nascimento-cliente {
+.proposta-formulario {
   margin-top: 40px; }
-.proposta-formulario .input-nascimento {
-  margin-top: 20px; }
-.proposta-formulario .ocupacao-cliente {
+  .proposta-formulario ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-size: 24px;
+    font-family: "gotham_htfbook";
+    color: #919191 !important; }
+  .proposta-formulario ::-moz-placeholder {
+    /* Firefox 19+ */
+    font-size: 24px;
+    font-family: "gotham_htfbook";
+    color: #919191 !important; }
+  .proposta-formulario :-ms-input-placeholder {
+    /* IE 10+ */
+    font-size: 24px;
+    font-family: "gotham_htfbook";
+    color: #919191 !important; }
+  .proposta-formulario :-moz-placeholder {
+    /* Firefox 18- */
+    font-size: 24px;
+    font-family: "gotham_htfbook";
+    color: #919191 !important; }
+  .proposta-formulario h5 {
+    font-family: 'gotham_htf';
+    font-weight: bold; }
+  .proposta-formulario label {
+    font-size: 11px; }
+  .proposta-formulario input {
+    font-size: 24px;
+    color: #142d4e; }
+  .proposta-formulario .cpf-cliente {
+    margin-top: 40px; }
+  .proposta-formulario .celular-cliente {
+    margin-top: 40px; }
+  .proposta-formulario .input-cel {
+    margin-top: 20px; }
+  .proposta-formulario .txt-cel {
+    margin-top: 5px;
+    color: #919191; }
+  .proposta-formulario .nascimento-cliente {
+    margin-top: 40px; }
+  .proposta-formulario .input-nascimento {
+    margin-top: 20px; }
+  .proposta-formulario .ocupacao-cliente {
+    margin-top: 40px; }
+  .proposta-formulario select.form-custom {
+    margin-top: 10px;
+    font-size: 25px;
+    font-family: "gotham_htfbook";
+    color: #919191; }
+  .proposta-formulario .cep-cliente {
+    margin-top: 40px; }
+  .proposta-formulario .txt-cep {
+    margin-top: 20px; }
+    .proposta-formulario .txt-cep a {
+      text-decoration: underline; }
+  .proposta-formulario .botao-proximo {
+    margin-top: 30px; }
+  .proposta-formulario .titulo-info h3 {
+    margin-top: 0px;
+    width: 320px;
+    text-align: left;
+    margin-left: 100px; }
+
+.foto-cliente {
   margin-top: 40px; }
-.proposta-formulario select.form-custom {
-  margin-top: 10px;
-  font-size: 25px; }
-.proposta-formulario .cep-cliente {
-  margin-top: 40px; }
-.proposta-formulario .txt-cep {
-  margin-top: 5px; }
-  .proposta-formulario .txt-cep a {
-    text-decoration: underline; }
-.proposta-formulario .botao-proximo {
-  margin-top: 30px; }
+  .foto-cliente .img-boneco {
+    text-align: center; }
 
 /*# sourceMappingURL=credline-novo.css.map */
