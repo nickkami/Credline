@@ -9,6 +9,11 @@ $(document).ready(function () {
 
 	$(".icone-toggle span").on('click',function(){
 		$(this).toggleClass("glyphicon-chevron-up glyphicon-chevron-down");
+	});
+
+	$(".foto-cliente .bt-vermelho").on('click',function(){
+		$(".foto-cliente").hide();
+		$(".foto-posicione").fadeIn('slow');
 	})
 
 });

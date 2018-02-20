@@ -304,5 +304,59 @@ h5 {
   margin-top: 40px; }
   .foto-cliente .img-boneco {
     text-align: center; }
+  .foto-cliente h5 {
+    color: #FF3636;
+    font-family: 'gotham_htfbold'; }
+  .foto-cliente .icon-photo {
+    position: relative;
+    top: -3px;
+    left: -6px; }
+  .foto-cliente .bt-vermelho {
+    margin-top: 30px;
+    font-family: 'gotham_htfbook';
+    font-size: 11px; }
+
+.foto-posicione {
+  display: none;
+  margin-top: 40px; }
+  .foto-posicione h3 {
+    margin-left: 200px; }
+  .foto-posicione .img-camera {
+    background-color: #ccc;
+    height: 600px; }
+
+.foto-cliente.resultado-negativo {
+  margin-top: 40px; }
+  .foto-cliente.resultado-negativo h3 {
+    color: #FF3636; }
+  .foto-cliente.resultado-negativo .img-circle {
+    margin-top: 30px;
+    border: solid 2px #ccc;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px; }
+
+.foto-cliente.resultado-positivo {
+  margin-top: 40px; }
+  .foto-cliente.resultado-positivo .info-foto .img-check {
+    display: inline-block !important;
+    margin-bottom: 20px;
+    margin-right: 10px; }
+  .foto-cliente.resultado-positivo .info-foto h3 {
+    display: inline-block !important; }
+  .foto-cliente.resultado-positivo .img-circle {
+    margin-top: 30px;
+    border: solid 2px #ccc;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px; }
+  .foto-cliente.resultado-positivo .box-tireNovamente {
+    margin-top: 15px; }
+    .foto-cliente.resultado-positivo .box-tireNovamente .glyphicon-camera {
+      font-size: 16px; }
+    .foto-cliente.resultado-positivo .box-tireNovamente a {
+      text-decoration: underline;
+      color: #53B0F2;
+      font-size: 12px; }
 
 /*# sourceMappingURL=credline-novo.css.map */

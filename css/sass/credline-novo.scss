@@ -169,4 +169,67 @@ padding: 15px 0 20px 0;  margin-bottom: 30px;}
     .img-boneco{
         text-align: center;
     }
+    h5{
+        color: $vermelho;
+        font-family:'gotham_htfbold'; 
+    }
+    .icon-photo{
+        position: relative;
+        top: -3px;
+        left: -6px;
+    }
+    .bt-vermelho{
+        margin-top: 30px;
+        font-family: 'gotham_htfbook';
+        font-size: 11px;
+    }
+}
+.foto-posicione{
+    display: none;
+    margin-top: $respiro-topo;
+    h3{
+        margin-left: 200px;
+    }
+    .img-camera{
+        background-color: #ccc;
+        height: 600px;
+    }
+}
+.foto-cliente.resultado-negativo{
+    margin-top: $respiro-topo;
+    h3{color: $vermelho;}
+    .img-circle{
+        margin-top: 30px;
+        border:solid 2px #ccc;
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+    }
+}
+.foto-cliente.resultado-positivo{
+    margin-top: $respiro-topo;
+    .info-foto{
+        .img-check{
+            display: inline-block!important;
+            margin-bottom: 20px;
+            margin-right: 10px;
+        } 
+        h3{display: inline-block!important;}
+    }
+    .img-circle{
+        margin-top: 30px;
+        border:solid 2px #ccc;
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+    }
+    .box-tireNovamente{
+        margin-top: 15px;
+        .glyphicon-camera{font-size: 16px;}
+        a{
+            text-decoration: underline;
+            color: #53B0F2;
+            font-size: 12px;
+        }
+    }
 }
