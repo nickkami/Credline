@@ -359,4 +359,27 @@ h5 {
       color: #53B0F2;
       font-size: 12px; }
 
+.proposta-negada {
+  margin-top: 40px; }
+  .proposta-negada .box-icon {
+    text-align: right;
+    margin-top: 25px; }
+  .proposta-negada .txt-title {
+    margin-bottom: 60px; }
+    .proposta-negada .txt-title h3 {
+      color: #FF3636; }
+  .proposta-negada .box-txt {
+    margin-bottom: 20px; }
+    .proposta-negada .box-txt h5 {
+      color: #FF3636;
+      font-family: 'gotham_htfbold'; }
+    .proposta-negada .box-txt p {
+      font-family: 'gotham_htfbook';
+      font-size: 16px; }
+  .proposta-negada .box-btn {
+    margin-top: 30px; }
+
+.dados-cliente #conteudo-scrollspy {
+  position: relative; }
+
 /*# sourceMappingURL=credline-novo.css.map */

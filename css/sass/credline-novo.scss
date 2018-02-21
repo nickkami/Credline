@@ -233,3 +233,33 @@ padding: 15px 0 20px 0;  margin-bottom: 30px;}
         }
     }
 }
+.proposta-negada{
+    margin-top: $respiro-topo;
+    .box-icon{
+        text-align: right;
+        margin-top: 25px;
+    }
+    .txt-title{
+        margin-bottom: 60px;
+        h3{color: $vermelho;}
+    }
+    .box-txt{
+        margin-bottom: 20px;
+        h5{
+            color: $vermelho;
+            font-family:'gotham_htfbold';
+        }
+        p{
+            font-family: 'gotham_htfbook';
+            font-size: 16px;
+        }
+    }
+    .box-btn{
+        margin-top: 30px;
+    }
+}
+.dados-cliente{
+    #conteudo-scrollspy{
+        position: relative;
+    }
+}
