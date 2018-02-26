@@ -132,6 +132,12 @@ a {
   background-color: #CE0000 !important;
   color: #fff !important; }
 
+.bt-branco {
+  width: 60%;
+  text-align: left;
+  line-height: 30px;
+  color: #919191; }
+
 h3 {
   font-weight: bold;
   font-size: 32px; }
@@ -234,7 +240,29 @@ h5 {
   box-shadow: none;
   border-radius: inherit;
   background-color: #FBFBFB;
-  height: 40px; }
+  height: 40px;
+  font-size: 24px;
+  font-family: "gotham_htfbook"; }
+  .form-custom ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-size: 24px;
+    font-family: "gotham_htfbook";
+    color: #919191 !important; }
+  .form-custom ::-moz-placeholder {
+    /* Firefox 19+ */
+    font-size: 24px;
+    font-family: "gotham_htfbook";
+    color: #919191 !important; }
+  .form-custom :-ms-input-placeholder {
+    /* IE 10+ */
+    font-size: 24px;
+    font-family: "gotham_htfbook";
+    color: #919191 !important; }
+  .form-custom :-moz-placeholder {
+    /* Firefox 18- */
+    font-size: 24px;
+    font-family: "gotham_htfbook";
+    color: #919191 !important; }
 
 .proposta-formulario {
   margin-top: 40px; }
@@ -379,7 +407,40 @@ h5 {
   .proposta-negada .box-btn {
     margin-top: 30px; }
 
-.dados-cliente #conteudo-scrollspy {
-  position: relative; }
+section.box-dados-pessoais #myScrollspy {
+  text-align: left;
+  font-size: 32px; }
+section.box-dados-pessoais label {
+  font-size: 16px; }
+section.box-dados-pessoais ul {
+  list-style: none;
+  padding-left: 0px; }
+section.box-dados-pessoais ul li {
+  margin-top: 10px; }
+section.box-dados-pessoais div[class^="box"] {
+  padding-top: 60px; }
+section.box-dados-pessoais .box-botao {
+  margin-top: 40px; }
+@media (min-width: 768px) {
+  section.box-dados-pessoais .modal-alongado .modal-dialog {
+    width: 407px; } }
+section.box-dados-pessoais .modal-alongado .modal-content {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px; }
+section.box-dados-pessoais .modal-alongado .modal-header {
+  border-bottom: none; }
+section.box-dados-pessoais .modal-alongado .modal-footer {
+  border-top: none;
+  text-align: left; }
+section.box-dados-pessoais .modal-alongado input, section.box-dados-pessoais .modal-alongado select {
+  background-color: #fff; }
+section.box-dados-pessoais .modal-alongado .label-title {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: bold; }
+section.box-dados-pessoais .modal-alongado label {
+  font-weight: normal;
+  font-size: 13px; }
 
 /*# sourceMappingURL=credline-novo.css.map */

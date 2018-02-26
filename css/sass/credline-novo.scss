@@ -62,6 +62,7 @@ a{color: #53b0f2;;}
 .status.negada{color: $vermelho;}
 .bt-vermelho{background-color: $vermelho; color: #fff;border-radius: 45px; font-size: 12px; font-weight: bold; text-transform: uppercase; padding: 10px 20px 8px 20px!important; margin-top: 5px;}
 .bt-vermelho:hover{background-color: $vermelho-hover!important;color: #fff!important;}
+.bt-branco{width: 60%;text-align: left;line-height: 30px;color: #919191;}
 h3{font-weight: bold; font-size: 32px;}
 h4, .h4 {font-weight: bold; font-size: 18px;}
 h5{font-size: 16px;}
@@ -109,11 +110,32 @@ padding: 15px 0 20px 0;  margin-bottom: 30px;}
     border-radius: inherit;
     background-color: #FBFBFB;
     height: 40px;
+    font-size: 24px;
+    font-family: "gotham_htfbook";
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        font-size: 24px;
+        font-family: "gotham_htfbook";
+        color: $cinza-claro!important;
+     }
+     ::-moz-placeholder { /* Firefox 19+ */
+         font-size: 24px;
+         font-family: "gotham_htfbook";
+         color: $cinza-claro!important;
+     }
+     :-ms-input-placeholder { /* IE 10+ */
+         font-size: 24px;
+         font-family: "gotham_htfbook";
+         color: $cinza-claro!important;
+     }   
+     :-moz-placeholder { /* Firefox 18- */
+         font-size: 24px;
+         font-family: "gotham_htfbook";
+         color: $cinza-claro!important;
+     }
 }
 
 .proposta-formulario{
     margin-top: $respiro-topo;
-
     ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
         font-size: 24px;
         font-family: "gotham_htfbook";
@@ -258,8 +280,46 @@ padding: 15px 0 20px 0;  margin-bottom: 30px;}
         margin-top: 30px;
     }
 }
-.dados-cliente{
-    #conteudo-scrollspy{
-        position: relative;
+section.box-dados-pessoais{
+    #myScrollspy{
+        text-align: left;
+        font-size: 32px;
     }
+    label{font-size: 16px;}
+    ul{list-style: none; padding-left: 0px;}
+    ul li{margin-top: 10px;}
+    div[class^="box"]{padding-top: 60px;}
+    .box-botao{margin-top: 40px;}
+
+    //MODAL
+    .modal-alongado{
+        @media (min-width: 768px){
+            .modal-dialog{ 
+                width: 407px;
+            }
+        }
+        .modal-content{
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-bottom: 20px;
+        }
+        .modal-header{border-bottom: none;}
+        .modal-footer{
+            border-top: none;
+            text-align: left;
+        }
+        input, select{background-color: #fff;}
+        .label-title{
+            margin-bottom: 40px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        label{
+            font-weight: normal;
+            font-size: 13px;
+        }
+    }  
 }
+
+
+
