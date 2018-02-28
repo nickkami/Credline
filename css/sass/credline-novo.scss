@@ -60,7 +60,7 @@ a{color: #53b0f2;;}
 .status{color: #F9BB60;}
 .status.aprovado{color: #54AFF2;}
 .status.negada{color: $vermelho;}
-.bt-vermelho{background-color: $vermelho; color: #fff;border-radius: 45px; font-size: 12px; font-weight: bold; text-transform: uppercase; padding: 10px 20px 8px 20px!important; margin-top: 5px;}
+.bt-vermelho{background-color: $vermelho;line-height:23px; color: #fff;border-radius: 45px; font-size: 12px; font-weight: bold; text-transform: uppercase; padding: 10px 20px 8px 20px!important; margin-top: 5px;}
 .bt-vermelho:hover{background-color: $vermelho-hover!important;color: #fff!important;}
 .bt-branco{width: 70%;text-align: left;line-height: 30px;color: #919191;}
 .bt-cinza{background-color: #fff;border:solid thin #ebebeb; color: #484848 ;border-radius: 45px; font-size: 12px; font-weight: bold; text-transform: uppercase; padding: 10px 20px 8px 20px!important; margin-top: 5px;}
@@ -89,6 +89,35 @@ padding: 15px 0 20px 0;  margin-bottom: 30px;}
 .table .glyphicon{font-size: 11px;}
 .glyphicon-chevron-up{color: $vermelho!important;}
 ul{list-style: none; padding-left: 0px;}
+
+.box-propostaFinalizada{
+    position: absolute;
+    padding: 20px;
+    right: 0px;
+    top:-24px;
+    z-index: 50;
+    width: 515px;
+    height: 120px;
+    border-radius: 6px;
+    background-color: #53b0f2;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
+    .box-check{text-align: right;}
+    h3{
+        font-family: 'gotham_htflight';
+        font-size: 32px;
+        color: #fff;
+        margin-top: 0px;
+    }
+    span{
+        font-family: 'gotham_htfbook';
+        font-size: 14px;
+        color: #fff;
+    }
+}
+.check-blue{
+    width: 32px;
+    margin-top: 20px;
+}
 .card{
     padding: 30px;
     background-color: #fff;
@@ -497,4 +526,22 @@ section.produtos-servicos{
         margin-top: 30px;
     }
 }
-
+.impressao-contrato{
+    .box-txtAdesao{
+        margin-top: 90px;
+    }
+    .txt-proposta{text-align: justify;}
+    .box-sign{margin-top: 80px;}
+    .box-txtSign{
+        font-size: 11px; 
+        color: $cinza-claro;
+        margin-top: 20px;
+    }
+    .box-imprimir{
+        margin-top: 50px;
+        font-family: 'gotham_htfbook';
+    }
+    .print-icon{
+        margin-top: -8px;
+    }
+}
