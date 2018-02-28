@@ -7,6 +7,9 @@ $(document).ready(function () {
 		margin: 20
 	});
 
+	//::Tooltip
+	$('[data-toggle="tooltip"]').tooltip()
+
 	$(".icone-toggle span").on('click',function(){
 		$(this).toggleClass("glyphicon-chevron-up glyphicon-chevron-down");
 	});
