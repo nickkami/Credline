@@ -66,14 +66,6 @@
         border-bottom-color: none;
         }
 
-        ul.nav-tabs li:first-child a {
-            /* border-radius: 4px 4px 0 0; */
-        }
-
-        ul.nav-tabs li:last-child a {
-            /* border-radius: 0 0 4px 4px; */
-        }
-
         ul.nav-tabs.affix {
             top: 0px;
             /* set the top position of pinned element */
@@ -187,6 +179,9 @@
                             <ul>
                                 <li class="form-group">
                                     <input class="form-control form-custom" placeholder="E-mail">
+                                </li>
+                                <li class="form-group">
+                                    <input class="form-control form-custom" placeholder="Confirmar E-mail">
                                     <div class="checkbox">
                                         <label class="checkbox">
                                             <input type="checkbox"> Cliente não possui e-mail
@@ -270,19 +265,75 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="box-cartaoAdicional">
+                        <div class="box-desejaCartao">
                             <label>O cliente deseja um cartâo adicional?</label>
                             <ul>
                                 <li>
-                                    <button class="btn btn-default bt-branco">SIM</button>
+                                    <button class="btn btn-default bt-branco" data-toggle="modal" data-target="#modal-cartoesAdicionais">SIM</button>
                                 </li>
                                 <li>
                                     <button class="btn btn-default bt-branco">NÂO</button>
                                 </li>
-                                <li class="box-botao">
-                                    <button class="btn bt-vermelho">PRÓXIMO: PRODUTOS E SERVIÇOS</button>
-                                </li>
                             </ul>
+                        </div>
+                        <div class="box-cartaoAdicional">
+                            <label>Cartões Adicionais</label>
+                            <div class="card-cartao">
+                                <div class="row">
+                                    <div class="col-xs-12 box-editar">
+                                        <a href="" data-toggle="modal" data-target="">
+                                            <img src="imgs/edit-3.png" alt="editar"> Editar
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label>João da Silva</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <label class="txt-parente">Conjugê</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <ul>
+                                            <li>
+                                                <label>CPF:</label>
+                                            </li>
+                                            <li>
+                                                <label>000.000.000-00</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <ul>
+                                            <li>
+                                                <label>Data de Nascimento:</label>
+                                            </li>
+                                            <li>
+                                                <label>31/08/89</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 box-addCartao">
+                                    <a href="javascript:;">
+                                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>    
+                                        Adicionar Cartão
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 box-botao">
+                                <button class="btn bt-vermelho">PRÓXIMO: PRODUTOS E SERVIÇOS</button>
+                            </div>
                         </div>
                     </section>
                 </div>
@@ -359,6 +410,59 @@
                                 </div>
                             </div>
             
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn bt-vermelho">SALVAR</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade modal-alongado" id="modal-cartoesAdicionais" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <!-- <h4 class="modal-title" id="myModalLabel">Modal title</h4> -->
+                        </div>
+                        <div class="modal-body">
+                            <label class="label-title">Cartões Adicionais</label>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-group">
+                                        <label></label>
+                                        <input type="text" class="form-control form-custom" placeholder="Nome completo">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-group">
+                                        <label>&nbsp;</label>
+                                        <input type="text" class="form-control form-custom" placeholder="CPF">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-group">
+                                        <label></label>
+                                        <input type="text" class="form-control form-custom" placeholder="Data de Nascimento">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-group">
+                                        <label></label>
+                                        <select class="form-control form-custom">
+                                            <option>Grau de parentesco</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn bt-vermelho">SALVAR</button>

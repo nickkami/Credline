@@ -133,10 +133,24 @@ a {
   color: #fff !important; }
 
 .bt-branco {
-  width: 60%;
+  width: 70%;
   text-align: left;
   line-height: 30px;
   color: #919191; }
+
+.bt-cinza {
+  background-color: #fff;
+  border: solid thin #ebebeb;
+  color: #484848;
+  border-radius: 45px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 20px 8px 20px !important;
+  margin-top: 5px; }
+
+.bt-cinza:hover {
+  background-color: #ebebeb; }
 
 h3 {
   font-weight: bold;
@@ -421,6 +435,28 @@ section.box-dados-pessoais div[class^="box"] {
   padding-top: 60px; }
 section.box-dados-pessoais .box-botao {
   margin-top: 40px; }
+section.box-dados-pessoais .box-cartaoAdicional {
+  width: 70%; }
+  section.box-dados-pessoais .box-cartaoAdicional .box-editar {
+    text-align: right; }
+  section.box-dados-pessoais .box-cartaoAdicional .card-cartao {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 2px;
+    -webkit-box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.1); }
+    section.box-dados-pessoais .box-cartaoAdicional .card-cartao .txt-parente {
+      color: #919191;
+      font-size: 13px;
+      font-family: "gotham_htfbook"; }
+    section.box-dados-pessoais .box-cartaoAdicional .card-cartao label {
+      font-size: 15px; }
+  section.box-dados-pessoais .box-cartaoAdicional .box-addCartao {
+    margin-top: 20px; }
+    section.box-dados-pessoais .box-cartaoAdicional .box-addCartao a {
+      font-family: 'gotham_htfbold'; }
 @media (min-width: 768px) {
   section.box-dados-pessoais .modal-alongado .modal-dialog {
     width: 407px; } }
@@ -442,5 +478,46 @@ section.box-dados-pessoais .modal-alongado .label-title {
 section.box-dados-pessoais .modal-alongado label {
   font-weight: normal;
   font-size: 13px; }
+
+section.produtos-servicos .titulo {
+  margin-bottom: 30px; }
+section.produtos-servicos .linha-cards + .linha-cards {
+  margin-top: 30px; }
+section.produtos-servicos .card-produto {
+  padding: 30px;
+  background-color: #fff;
+  text-align: center;
+  -webkit-box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.1); }
+  section.produtos-servicos .card-produto .txt-tipo {
+    color: #919191;
+    font-size: 12px;
+    font-family: 'gotham_htfbook'; }
+  section.produtos-servicos .card-produto h5 {
+    color: #FF3636;
+    font-weight: bold;
+    font-family: 'gotham_htfbold'; }
+  section.produtos-servicos .card-produto ul {
+    list-style: none;
+    padding-left: 0px !important; }
+  section.produtos-servicos .card-produto li.txt-produto {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  section.produtos-servicos .card-produto .box-botaoAdquirir button {
+    font-family: 'gotham_htfbook';
+    font-size: 11px; }
+section.produtos-servicos .card-produto.adquirir ul.box-btn-adquirir {
+  margin-bottom: -36px; }
+  section.produtos-servicos .card-produto.adquirir ul.box-btn-adquirir li {
+    text-align: right; }
+section.produtos-servicos .card-produto.adquirir h5, section.produtos-servicos .card-produto.adquirir li.txt-produto {
+  color: #919191 !important; }
+section.produtos-servicos .card-produto.adquirir .glyphicon-ok-sign {
+  font-size: 32px;
+  color: #53b0f2; }
+section.produtos-servicos .box-impressaoContrato {
+  margin-top: 50px;
+  text-align: center; }
 
 /*# sourceMappingURL=credline-novo.css.map */

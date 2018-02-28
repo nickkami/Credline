@@ -62,7 +62,9 @@ a{color: #53b0f2;;}
 .status.negada{color: $vermelho;}
 .bt-vermelho{background-color: $vermelho; color: #fff;border-radius: 45px; font-size: 12px; font-weight: bold; text-transform: uppercase; padding: 10px 20px 8px 20px!important; margin-top: 5px;}
 .bt-vermelho:hover{background-color: $vermelho-hover!important;color: #fff!important;}
-.bt-branco{width: 60%;text-align: left;line-height: 30px;color: #919191;}
+.bt-branco{width: 70%;text-align: left;line-height: 30px;color: #919191;}
+.bt-cinza{background-color: #fff;border:solid thin #ebebeb; color: #484848 ;border-radius: 45px; font-size: 12px; font-weight: bold; text-transform: uppercase; padding: 10px 20px 8px 20px!important; margin-top: 5px;}
+.bt-cinza:hover{background-color:#ebebeb;}
 h3{font-weight: bold; font-size: 32px;}
 h4, .h4 {font-weight: bold; font-size: 18px;}
 h5{font-size: 16px;}
@@ -290,7 +292,31 @@ section.box-dados-pessoais{
     ul li{margin-top: 10px;}
     div[class^="box"]{padding-top: 60px;}
     .box-botao{margin-top: 40px;}
-
+    .box-cartaoAdicional{
+        width: 70%;
+        .box-editar{text-align: right;}
+        .card-cartao{
+            .txt-parente{
+                color:$cinza-claro;
+                font-size: 13px; 
+                font-family: 'gotham_htfbook'
+            }
+            label{font-size: 15px;}
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 2px;
+            -webkit-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.1);
+            -moz-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.1);
+            box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.1);
+        }
+        .box-addCartao{
+            margin-top: 20px;
+            a{
+                font-family: 'gotham_htfbold';
+            }
+        }
+    }
     //MODAL
     .modal-alongado{
         @media (min-width: 768px){
@@ -320,6 +346,59 @@ section.box-dados-pessoais{
         }
     }  
 }
+section.produtos-servicos{
+    .titulo{
+        margin-bottom: 30px;
+    }
+    .linha-cards +.linha-cards{margin-top: 30px;}
+   .card-produto{
+       .txt-tipo{
+           color: $cinza-claro;
+           font-size: 12px;
+           font-family: 'gotham_htfbook';
+       }
+       padding: 30px;
+       background-color: #fff;
+       text-align: center;;
+        -webkit-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.1);
+        -moz-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.1);
+        box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.1);
+        h5{
+            color: $vermelho;
+            font-weight: bold;
+            font-family: 'gotham_htfbold';
+        }
+        ul{
 
+            list-style: none;
+            padding-left: 0px!important;
+        }
+        li.txt-produto{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .box-botaoAdquirir{
+            button{
+                font-family: 'gotham_htfbook';
+                font-size: 11px;
+            }
+        }
+   }   
+   .card-produto.adquirir{
+        ul.box-btn-adquirir{
+            margin-bottom: -36px;
+            li{text-align: right;}
+        }
+        h5, li.txt-produto{color: $cinza-claro!important;}
+        .glyphicon-ok-sign{
+            font-size: 32px;
+            color: #53b0f2;
+        }
+    }
+   .box-impressaoContrato{
+       margin-top: 50px;
+       text-align: center;
+   }     
+}
 
 
