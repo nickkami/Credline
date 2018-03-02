@@ -19,6 +19,7 @@ $(document).ready(function () {
 		$(".foto-posicione").fadeIn('slow');
 	})
 
+	$(".box-propostaFinalizada").fadeIn("slow");
 });
 /****************** //DOCUMENT.READY*******************/
 

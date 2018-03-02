@@ -239,7 +239,7 @@ ul {
 
 .box-propostaFinalizada {
   position: absolute;
-  padding: 20px;
+  padding: 10px 20px 10px 20px;
   right: 0px;
   top: -24px;
   z-index: 50;
@@ -259,6 +259,8 @@ ul {
     font-family: 'gotham_htfbook';
     font-size: 14px;
     color: #fff; }
+  .box-propostaFinalizada .box-sair {
+    text-align: right; }
 
 .check-blue {
   width: 32px;

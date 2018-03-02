@@ -92,7 +92,7 @@ ul{list-style: none; padding-left: 0px;}
 
 .box-propostaFinalizada{
     position: absolute;
-    padding: 20px;
+    padding: 10px 20px 10px 20px;
     right: 0px;
     top:-24px;
     z-index: 50;
@@ -112,6 +112,9 @@ ul{list-style: none; padding-left: 0px;}
         font-family: 'gotham_htfbook';
         font-size: 14px;
         color: #fff;
+    }
+    .box-sair{
+        text-align: right;
     }
 }
 .check-blue{
