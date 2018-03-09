@@ -139,6 +139,11 @@ a {
   line-height: 30px;
   color: #919191; }
 
+.bt-branco:hover {
+  color: #53b0f2;
+  border: solid thin #53b0f2;
+  background-color: #fff; }
+
 .bt-cinza {
   background-color: #fff;
   border: solid thin #ebebeb;
@@ -163,6 +168,9 @@ h4, .h4 {
 
 h5 {
   font-size: 16px; }
+
+h6 {
+  font-weight: bold; }
 
 .box {
   background-color: #fff;
@@ -237,17 +245,23 @@ ul {
   list-style: none;
   padding-left: 0px; }
 
+.modal-header {
+  border-bottom: none; }
+
 .box-propostaFinalizada {
-  position: absolute;
+  display: none;
+  position: fixed;
   padding: 10px 20px 10px 20px;
-  right: 0px;
-  top: -24px;
+  right: 60px;
+  top: 75px;
   z-index: 50;
   width: 515px;
   height: 120px;
   border-radius: 6px;
   background-color: #53b0f2;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05); }
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.43);
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.43); }
   .box-propostaFinalizada .box-check {
     text-align: right; }
   .box-propostaFinalizada h3 {
@@ -260,7 +274,12 @@ ul {
     font-size: 14px;
     color: #fff; }
   .box-propostaFinalizada .box-sair {
-    text-align: right; }
+    text-align: right;
+    height: 15px; }
+  .box-propostaFinalizada a {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none; }
 
 .check-blue {
   width: 32px;
@@ -651,5 +670,112 @@ section.produtos-servicos .box-impressaoContrato {
   font-family: 'gotham_htfbook'; }
 .impressao-contrato .print-icon {
   margin-top: -8px; }
+
+@media (min-width: 768px) {
+  .modal-alongado .modal-dialog {
+    width: 407px; } }
+.modal-alongado .modal-body {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px; }
+
+#modal-imprimindo .box-icon {
+  text-align: center; }
+#modal-imprimindo .box-txt {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 40px; }
+
+#modal-impressaoSucesso .modal-body {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px; }
+#modal-impressaoSucesso h6 {
+  font-size: 14px; }
+#modal-impressaoSucesso p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-family: 'gotham_htfbook'; }
+#modal-impressaoSucesso button {
+  margin-top: 20px; }
+#modal-impressaoSucesso .box-info-errada {
+  text-decoration: underline;
+  margin-top: 20px; }
+
+.escanear-documento .box-titulo {
+  text-align: center; }
+.escanear-documento .box-papel .img-papel {
+  text-align: center;
+  padding-top: 30px;
+  border: solid thin #EBEBEB;
+  background-color: #fff;
+  width: 240px;
+  height: 336px;
+  border-radius: 6px;
+  margin: 40px auto;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35); }
+  .escanear-documento .box-papel .img-papel .linhas-papel {
+    width: 200px; }
+  .escanear-documento .box-papel .img-papel .gif-papel {
+    width: 100px;
+    margin-top: 70px; }
+.escanear-documento .box-botao {
+  text-align: center; }
+
+.escaneado-sucesso .box-titulo {
+  text-align: center; }
+  .escaneado-sucesso .box-titulo img {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 15px; }
+  .escaneado-sucesso .box-titulo h3 {
+    display: inline-block; }
+.escaneado-sucesso .box-papel .img-papel {
+  text-align: center;
+  padding-top: 30px;
+  border: solid thin #EBEBEB;
+  background-color: #fff;
+  width: 240px;
+  height: 336px;
+  border-radius: 6px;
+  margin: 40px auto;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35); }
+.escaneado-sucesso .box-papel .contrato-papel {
+  width: 100%; }
+.escaneado-sucesso .box-botao {
+  text-align: center; }
+.escaneado-sucesso .linha {
+  text-align: center;
+  margin-bottom: 20px; }
+  .escaneado-sucesso .linha a {
+    text-decoration: underline; }
+  .escaneado-sucesso .linha ul li {
+    margin-bottom: 10px; }
+    .escaneado-sucesso .linha ul li span {
+      color: #919191;
+      font-size: 12px;
+      font-family: 'gotham_htfbook'; }
+  .escaneado-sucesso .linha button {
+    border-radius: 45px;
+    padding: 10px 20px;
+    font-size: 11px;
+    font-weight: bold;
+    background-color: #fff; }
+
+#modal-digitaCodigo .input-codigo input {
+  margin-top: 30px;
+  height: 70px; }
+#modal-digitaCodigo .box-reenviar {
+  text-align: center; }
+#modal-digitaCodigo .box-semCelular {
+  text-align: center;
+  margin-top: 20px; }
 
 /*# sourceMappingURL=credline-novo.css.map */

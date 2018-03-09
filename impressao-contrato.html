@@ -141,12 +141,79 @@
                 </div>
             <div class="row">
                 <div class="col-xs-12 box-imprimir">
-                    <button class="btn bt-vermelho">
+                    <button class="btn bt-vermelho" data-toggle="modal" data-target="#modal-imprimindo">
                         <img class="print-icon" src="imgs/print-icon.png" alt="imprimir">
                         IMPRIMIR
                     </button>
                 </div>
             </div>
+
+            <!-- MODAL IMPRIMINDO -->
+            <div class="modal fade" id="modal-imprimindo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog modal-sm" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <!-- <h4 class="modal-title" id="myModalLabel">Modal title</h4> -->
+                        </div>
+                        <div class="modal-body">
+                           <div class="row">
+                               <div class="col-xs-12 box-icon">
+                                    <img src="imgs/impressora-icon.png" alt="imprimindo">
+                               </div>
+                           </div>
+                           <div class="row">
+                                <div class="col-xs-12 box-txt">
+                                     <span>Imprimindo ...</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //MODAL IMPRIMINDO -->
+
+            <!-- MODAL IMPRESSO SUCESSO -->
+            <div class="modal fade modal-alongado" id="modal-impressaoSucesso" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <!-- <h4 class="modal-title" id="myModalLabel">Modal title</h4> -->
+                            </div>
+                            <div class="modal-body">
+                                <img src="imgs/check.png" alt="sucesso">
+                                <h3>Impressão realizada com sucesso</h3>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <p>Entregue o contrato ao cliente e peça que ele verifique as 
+                                            informaçõs e assine os documentos. </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <h6>O documento foi assinado?</h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <button class="btn bt-vermelho">SIM</button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 box-info-errada">
+                                        <a href="javascript:;">Há uma informação errada</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- //MODAL IMPRESSO SUCESSO -->
         </section>
     </div>
 </body>
