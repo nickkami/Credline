@@ -32,7 +32,8 @@ $vermelho: #FF3636;
 $vermelho-hover:#CE0000;
 $cinza-claro: #919191;
 $respiro-topo: 40px;
-$marinho:#142d4e;;
+$marinho:#142d4e;
+$azul-claro:#53b0f2;
 
 *{font-family: "gotham_htf","Helvetica Neue", "Helvetica", "Arial", "sans-serif";}
 body{background-color: #fbfbfb; color: $marinho;font-size: 13px; margin-bottom: 30px;}
@@ -55,7 +56,7 @@ nav .nome-loja{padding: 10px 0 0 15px; font-size: 12px; color: #fff;}
 .owl-carousel .owl-nav .owl-prev{float: left;}
 .owl-carousel .owl-nav .owl-next{float: right;text-align: right;}
 
-a{color: #53b0f2;;}
+a{color: $azul-claro;}
 .table{font-size: 13px;}
 .status{color: #F9BB60;}
 .status.aprovado{color: #54AFF2;}
@@ -63,7 +64,7 @@ a{color: #53b0f2;;}
 .bt-vermelho{background-color: $vermelho;line-height:23px; color: #fff;border-radius: 45px; font-size: 12px; font-weight: bold; text-transform: uppercase; padding: 10px 20px 8px 20px!important; margin-top: 5px;}
 .bt-vermelho:hover{background-color: $vermelho-hover!important;color: #fff!important;}
 .bt-branco{width: 70%;text-align: left;line-height: 30px;color: #919191;}
-.bt-branco:hover{color: #53b0f2; border:solid thin #53b0f2; background-color: #fff;}
+.bt-branco:hover{color: $azul-claro; border:solid thin $azul-claro; background-color: #fff;}
 .bt-cinza{background-color: #fff;border:solid thin #ebebeb; color: #484848 ;border-radius: 45px; font-size: 12px; font-weight: bold; text-transform: uppercase; padding: 10px 20px 8px 20px!important; margin-top: 5px;}
 .bt-cinza:hover{background-color:#ebebeb;}
 h3{font-weight: bold; font-size: 32px;}
@@ -104,7 +105,7 @@ ul{list-style: none; padding-left: 0px;}
     width: 515px;
     height: 120px;
     border-radius: 6px;
-    background-color: #53b0f2;
+    background-color: $azul-claro;
     -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.43);
     -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.43);
     box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.43);
@@ -305,7 +306,7 @@ ul{list-style: none; padding-left: 0px;}
         .glyphicon-camera{font-size: 16px;}
         a{
             text-decoration: underline;
-            color: #53B0F2;
+            color: $azul-claro;
             font-size: 12px;
         }
     }
@@ -445,7 +446,7 @@ section.produtos-servicos{
         h5, li.txt-produto{color: $cinza-claro!important;}
         .glyphicon-ok-sign{
             font-size: 32px;
-            color: #53b0f2;
+            color: $azul-claro;
         }
     }
    .box-impressaoContrato{
@@ -517,14 +518,14 @@ section.produtos-servicos{
             -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
           }
           .radio input[type="radio"]:checked + span{
-            color:#53b0f2;;  
+            color:$azul-claro;  
           }
           .radio input[type="radio"]:checked + span:before{
               content:'';
             width:15px;
             height:15px;
             position:absolute;
-            background:#53b0f2;;
+            background:$azul-claro;
             left:5px;
             top:6px;
             border-radius:100%;
@@ -690,12 +691,62 @@ section.produtos-servicos{
     .input-codigo input{
         margin-top: 30px;
         height: 70px;
+        text-align: center;
+        font-size: 24px;
+        color: $azul-claro;
+    }
+    .form-control.sms-ok{
+        background: url('../imgs/check.png') no-repeat center right;
+        background-position: right 10px center;
+        padding-right: 10px;
+        border: solid thin $azul-claro;
+    }
+    ::-webkit-input-placeholder {
+        text-align: center!important;
+        font-size: 24px;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+        text-align: center!important;
+        font-size: 24px;
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+        text-align: center!important;
+        font-size: 24px;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+        text-align: center!important;
+        font-size: 24px;
     }
     .box-reenviar{
         text-align: center;
+        margin-top: 20px;
     }
     .box-semCelular{
         text-align: center;
         margin-top: 20px;
+    }
+}
+#modal-confiraNumero{
+    .box-reenviar{
+        margin-top: 20px;
+    }
+    .form-group{
+        margin-top: 30px;
+    }
+}
+#modal-semCelular{
+    .txt{
+        margin-top: 20px;
+    }
+    .txt span{
+        color: $marinho;
+        font-weight: bold;
+    }
+    .txt-cinza{
+        color: $cinza-claro;
+        margin-top: 20px;
+    }
+    .box-continuar{
+        margin-top: 30px;
     }
 }

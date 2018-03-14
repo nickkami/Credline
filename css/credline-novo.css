@@ -458,7 +458,7 @@ ul {
       font-size: 16px; }
     .foto-cliente.resultado-positivo .box-tireNovamente a {
       text-decoration: underline;
-      color: #53B0F2;
+      color: #53b0f2;
       font-size: 12px; }
 
 .proposta-negada {
@@ -771,11 +771,51 @@ section.produtos-servicos .box-impressaoContrato {
 
 #modal-digitaCodigo .input-codigo input {
   margin-top: 30px;
-  height: 70px; }
+  height: 70px;
+  text-align: center;
+  font-size: 24px;
+  color: #53b0f2; }
+#modal-digitaCodigo .form-control.sms-ok {
+  background: url("../imgs/check.png") no-repeat center right;
+  background-position: right 10px center;
+  padding-right: 10px;
+  border: solid thin #53b0f2; }
+#modal-digitaCodigo ::-webkit-input-placeholder {
+  text-align: center !important;
+  font-size: 24px; }
+#modal-digitaCodigo ::-moz-placeholder {
+  /* Firefox 19+ */
+  text-align: center !important;
+  font-size: 24px; }
+#modal-digitaCodigo :-ms-input-placeholder {
+  /* IE 10+ */
+  text-align: center !important;
+  font-size: 24px; }
+#modal-digitaCodigo :-moz-placeholder {
+  /* Firefox 18- */
+  text-align: center !important;
+  font-size: 24px; }
 #modal-digitaCodigo .box-reenviar {
-  text-align: center; }
+  text-align: center;
+  margin-top: 20px; }
 #modal-digitaCodigo .box-semCelular {
   text-align: center;
   margin-top: 20px; }
+
+#modal-confiraNumero .box-reenviar {
+  margin-top: 20px; }
+#modal-confiraNumero .form-group {
+  margin-top: 30px; }
+
+#modal-semCelular .txt {
+  margin-top: 20px; }
+#modal-semCelular .txt span {
+  color: #142d4e;
+  font-weight: bold; }
+#modal-semCelular .txt-cinza {
+  color: #919191;
+  margin-top: 20px; }
+#modal-semCelular .box-continuar {
+  margin-top: 30px; }
 
 /*# sourceMappingURL=credline-novo.css.map */

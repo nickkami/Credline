@@ -78,7 +78,7 @@
                             <div class="row">
                                 <div class="col-xs-12">
                                     <div class="form-group input-codigo">
-                                        <input type="text" class="form-control" placeholder="Insira o código">
+                                        <input type="text" class="form-control sms-ok" placeholder="Insira o código">
                                     </div>
                                 </div>
                             </div>
@@ -101,6 +101,89 @@
                     </div>
                 </div>
             </div>
+
+            <div class="modal fade modal-alongado" id="modal-confiraNumero" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <!-- <h4 class="modal-title" id="myModalLabel">Modal title</h4> -->
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h3>Por favor confira o número do cliente</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 txt">
+                                    <span>Antes de reenviar, tenha certeza de que o número cadasreado está correto.</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-group">
+                                        <label>TELEFONE</label>
+                                        <input type="text" class="form-control form-custom" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 box-reenviar">
+                                    <a href="javascript:;">  
+                                        <butoon class="btn bt-vermelho">Reenviar código</butoon>  
+                                    </a>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade modal-alongado" id="modal-semCelular" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <!-- <h4 class="modal-title" id="myModalLabel">Modal title</h4> -->
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <img src="imgs/noCelular-icon.png" alt="sem celular">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <h3>O cliente está sem o celular agora?</h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 txt">
+                                        Um SMS será enviado para o número <span>(11)99999-9999</span>. 
+                                        Peça que as intruções contidas nele sejam seguidas.
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 txt-cinza">
+                                        <span>É apenas uma forma de garantir que a fatura será entregue no celular.</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 box-continuar">
+                                        <a href="javascript:;">  
+                                            <butoon class="btn bt-vermelho">Continuar</butoon>  
+                                        </a>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             <!-- //Modais -->
         </section>
     </div>
