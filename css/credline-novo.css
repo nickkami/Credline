@@ -818,4 +818,26 @@ section.produtos-servicos .box-impressaoContrato {
 #modal-semCelular .box-continuar {
   margin-top: 30px; }
 
+.impressao-cartao {
+  margin-top: 40px; }
+  .impressao-cartao .box-botoes {
+    margin-top: 40px; }
+    .impressao-cartao .box-botoes span {
+      color: #919191;
+      padding-left: 20px;
+      padding-right: 20px; }
+  .impressao-cartao .box-propostaFinalizada {
+    width: 405px; }
+  .impressao-cartao #modal-impressaoCartao .box-botoes {
+    margin-top: 30px; }
+    .impressao-cartao #modal-impressaoCartao .box-botoes .bt-vermelho {
+      margin-right: 10px; }
+
+.impressao-voucher {
+  margin-top: 40px; }
+  .impressao-voucher .box-botoes {
+    margin-top: 40px; }
+  .impressao-voucher .box-propostaFinalizada {
+    width: 405px; }
+
 /*# sourceMappingURL=credline-novo.css.map */

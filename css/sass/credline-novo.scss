@@ -750,3 +750,32 @@ section.produtos-servicos{
         margin-top: 30px;
     }
 }
+.impressao-cartao{
+    margin-top: $respiro-topo;
+    .box-botoes{
+        margin-top: 40px;
+        span{
+            color: $cinza-claro;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+    .box-propostaFinalizada{
+        width: 405px;
+    }
+    #modal-impressaoCartao{
+        .box-botoes{
+            margin-top: 30px;
+            .bt-vermelho{margin-right: 10px;}
+        }
+    }
+}
+.impressao-voucher{
+    margin-top: $respiro-topo;
+    .box-botoes{
+        margin-top: 40px;
+    }
+    .box-propostaFinalizada{
+        width: 405px;
+    }
+}
