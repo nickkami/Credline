@@ -241,6 +241,14 @@ h6 {
 .glyphicon-chevron-up {
   color: #FF3636 !important; }
 
+.has-success .form-control {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.has-error .form-control {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
 ul {
   list-style: none;
   padding-left: 0px; }

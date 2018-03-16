@@ -91,6 +91,14 @@ padding: 15px 0 20px 0;  margin-bottom: 30px;}
 /*.area-busca .form-control.inatv{width: 84px!important;border:0px!important;background-color: transparent;box-shadow: none;}*/
 .table .glyphicon{font-size: 11px;}
 .glyphicon-chevron-up{color: $vermelho!important;}
+.has-success .form-control {
+    -webkit-box-shadow: none;
+     box-shadow: none; 
+}
+.has-error .form-control {
+    -webkit-box-shadow: none;
+    box-shadow: none; 
+}
 ul{list-style: none; padding-left: 0px;}
 .modal-header{
     border-bottom: none;
@@ -347,6 +355,7 @@ section.box-dados-pessoais{
     div[class^="box"]{padding-top: 60px;}
     .box-botao{margin-top: 40px;}
     .box-cartaoAdicional{
+        
         width: 70%;
         .box-editar{text-align: right;}
         .card-cartao{
