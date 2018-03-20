@@ -63,10 +63,11 @@ a{color: $azul-claro;}
 .status.negada{color: $vermelho;}
 .bt-vermelho{background-color: $vermelho;line-height:23px; color: #fff;border-radius: 45px; font-size: 12px; font-weight: bold; text-transform: uppercase; padding: 10px 20px 8px 20px!important; margin-top: 5px;}
 .bt-vermelho:hover{background-color: $vermelho-hover!important;color: #fff!important;}
-.bt-branco{width: 70%;text-align: left;line-height: 30px;color: #919191;}
+.bt-branco{width: 70%;line-height:23px; text-align: left;line-height: 30px;color: #919191;}
 .bt-branco:hover{color: $azul-claro; border:solid thin $azul-claro; background-color: #fff;}
-.bt-cinza{background-color: #fff;border:solid thin #ebebeb; color: #484848 ;border-radius: 45px; font-size: 12px; font-weight: bold; text-transform: uppercase; padding: 10px 20px 8px 20px!important; margin-top: 5px;}
+.bt-cinza{background-color: #fff;line-height:23px; border:solid thin #ebebeb; color: #484848 ;border-radius: 45px; font-size: 12px; font-weight: bold; text-transform: uppercase; padding: 10px 20px 8px 20px!important; margin-top: 5px;}
 .bt-cinza:hover{background-color:#ebebeb;}
+.bt-amarelo{background-color: #F8EEA7;line-height:23px; border:solid thin #EBE3A4; color: #484848 ;border-radius: 45px; font-size: 12px; font-weight: bold; text-transform: uppercase; padding: 10px 20px 8px 20px!important;}
 h3{font-weight: bold; font-size: 32px;}
 h4, .h4 {font-weight: bold; font-size: 18px;}
 h5{font-size: 16px;}
@@ -351,6 +352,25 @@ ul{list-style: none; padding-left: 0px;}
     }
 }
 section.box-dados-pessoais{
+    .container-proposta-cliente{
+        background-color: #F8EEA7;
+        border-radius: 5px;
+        padding: 5px 10px;
+        span{font-family: 'gotham_htflight'; color:#484848;}
+        .mini-foto-cliente{text-align: center;}
+        .img-circle{
+            margin-top: 7px;
+            width: 50px;
+            height: 50px;
+        }
+        .container-botao{text-align: right;}
+        .bt-amarelo{margin-top: 10px;}
+        .bt-fechar{
+            text-align: right;
+            a{text-decoration: none; color: #484848;}
+        }
+    }
+
     #myScrollspy{
         text-align: left;
         font-size: 32px;
@@ -414,6 +434,14 @@ section.box-dados-pessoais{
             font-size: 13px;
         }
     }  
+    #modal-suspenderCancelar{
+        .box-suspender{
+            margin-top: 20px;
+        }
+        .box-cancelar{
+            margin-top: 40px;
+        }
+    }
 }
 section.produtos-servicos{
     .titulo{
@@ -426,6 +454,7 @@ section.produtos-servicos{
            font-size: 12px;
            font-family: 'gotham_htfbook';
        }
+       height: 285px;
        padding: 30px;
        background-color: #fff;
        text-align: center;;

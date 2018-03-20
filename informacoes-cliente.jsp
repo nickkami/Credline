@@ -25,14 +25,6 @@
 								<h5>Preencha as informações do cliente abaixo:</h5>
 							</div>
 						</div>
-						<div class="row cpf-cliente">
-							<div class="col-md-8 col-xs-12 input-cpf">
-								<div class="form-group has-feedback">
-									<input type="text" placeholder="CPF" class='form-control form-custom cpf' data-error="Por favor, informe seu CPF ou um CPF válido" data-cpf required/>
-									<div class="help-block with-errors"></div>
-								</div>
-							</div>
-						</div>
 						<div class="row celular-cliente">
 							<div class="col-md-8 col-xs-12 input-cel">
 								<div class="form-group has-feedback">
@@ -71,7 +63,7 @@
 							</div>
 							<div class="col-xs-12 txt-cep">
 								<small>
-									<a href="">O cliente não sabe o CEP.</a>
+									<a href="javascript:;" data-toggle="modal" data-target="#myModal">O cliente não sabe o CEP.</a>
 								</small>
 							</div>
 						</div>
@@ -85,6 +77,31 @@
 			</form>
 		</section>
 	</div>
+
+	<!-- MODAL -->
+	<div class="modal fade modal-alongado" id="modal-naoSabeCep" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<!-- <h4 class="modal-title" id="myModalLabel">Modal title</h4> -->
+				</div>
+				<div class="modal-body">
+					<form data-toggle="validator" role="form">
+						<div class="row">
+							<div class="col-xs-12">
+								<span>Pesquisando por:</span>
+								<h4>Av. Paulista, Bela Vista, São Paulo - SP</h4>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //MODAL -->
 </body>
 <!-- Scripts -->
 <jsp:include page="includes/scripts.jsp"/> 

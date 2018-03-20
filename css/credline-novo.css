@@ -136,6 +136,7 @@ a {
 
 .bt-branco {
   width: 70%;
+  line-height: 23px;
   text-align: left;
   line-height: 30px;
   color: #919191; }
@@ -147,6 +148,7 @@ a {
 
 .bt-cinza {
   background-color: #fff;
+  line-height: 23px;
   border: solid thin #ebebeb;
   color: #484848;
   border-radius: 45px;
@@ -158,6 +160,17 @@ a {
 
 .bt-cinza:hover {
   background-color: #ebebeb; }
+
+.bt-amarelo {
+  background-color: #F8EEA7;
+  line-height: 23px;
+  border: solid thin #EBE3A4;
+  color: #484848;
+  border-radius: 45px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 20px 8px 20px !important; }
 
 h3 {
   font-weight: bold;
@@ -496,6 +509,28 @@ ul {
   .proposta-negada .box-btn {
     margin-top: 30px; }
 
+section.box-dados-pessoais .container-proposta-cliente {
+  background-color: #F8EEA7;
+  border-radius: 5px;
+  padding: 5px 10px; }
+  section.box-dados-pessoais .container-proposta-cliente span {
+    font-family: 'gotham_htflight';
+    color: #484848; }
+  section.box-dados-pessoais .container-proposta-cliente .mini-foto-cliente {
+    text-align: center; }
+  section.box-dados-pessoais .container-proposta-cliente .img-circle {
+    margin-top: 7px;
+    width: 50px;
+    height: 50px; }
+  section.box-dados-pessoais .container-proposta-cliente .container-botao {
+    text-align: right; }
+  section.box-dados-pessoais .container-proposta-cliente .bt-amarelo {
+    margin-top: 10px; }
+  section.box-dados-pessoais .container-proposta-cliente .bt-fechar {
+    text-align: right; }
+    section.box-dados-pessoais .container-proposta-cliente .bt-fechar a {
+      text-decoration: none;
+      color: #484848; }
 section.box-dados-pessoais #myScrollspy {
   text-align: left;
   font-size: 32px; }
@@ -553,12 +588,17 @@ section.box-dados-pessoais .modal-alongado .label-title {
 section.box-dados-pessoais .modal-alongado label {
   font-weight: normal;
   font-size: 13px; }
+section.box-dados-pessoais #modal-suspenderCancelar .box-suspender {
+  margin-top: 20px; }
+section.box-dados-pessoais #modal-suspenderCancelar .box-cancelar {
+  margin-top: 40px; }
 
 section.produtos-servicos .titulo {
   margin-bottom: 30px; }
 section.produtos-servicos .linha-cards + .linha-cards {
   margin-top: 30px; }
 section.produtos-servicos .card-produto {
+  height: 285px;
   padding: 30px;
   background-color: #fff;
   text-align: center;

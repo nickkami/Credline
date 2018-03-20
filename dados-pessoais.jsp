@@ -89,6 +89,29 @@
         <form data-toggle="validator" role="form">
             <section class="box-dados-pessoais">
                 <div class="row">
+                    <div class="col-xs-offset-2 col-xs-8">
+                        <div class="container-proposta-cliente">
+                            <div class="row">
+                                <div class="col-xs-2 mini-foto-cliente">
+                                    <img src="imgs/img-foto.jpg" alt="cliente" class="img-circle">
+                                </div>
+                                <div class="col-xs-5">
+                                    <ul>
+                                        <li><h4>Continuando proposta</h4></li>
+                                        <li><span>CPF:129.212.983-57 - 17/02 | 15:48</span></li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-4 container-botao">
+                                    <button type="button" class="btn bt-amarelo">MUDAR DE CLIENTE</button>
+                                </div>
+                                <div class="col-xs-1 bt-fechar">
+                                    <a href="javascript:;">X</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-xs-offset-2 col-xs-4" id="myScrollspy">
                         <ul class="nav nav-tabs nav-stacked" data-offset-top="120" data-spy="affix">
                             <li class="active">
@@ -138,11 +161,11 @@
                                 <label>Quais as informações de contato do cliente?</label>
                                 <ul>
                                     <li class="form-group has-feedback">
-                                        <input type="email" id="dados-email-cliente" class="form-control form-custom" data-error="Por favor, insira um e-mail válido" placeholder="E-mail">
+                                        <input type="email" id="dados-email-cliente" class="form-control form-custom" data-error="Por favor, insira um e-mail válido." placeholder="E-mail">
                                         <div class="help-block with-errors"></div>
                                     </li>
                                     <li class="form-group has-feedback">
-                                        <input type="email" data-match="#dados-email-cliente" class="form-control form-custom" data-error="Por favor, insira um e-mail válido" placeholder="Confirmar E-mail">
+                                        <input type="email" data-match="#dados-email-cliente" class="form-control form-custom" data-error="E-mail não coincide com o digitado acima!" placeholder="Confirmar E-mail">
                                         <div class="help-block with-errors"></div>
                                         <div class="checkbox">
                                             <label class="checkbox">
@@ -387,6 +410,39 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn bt-vermelho" data-dismiss="modal">SALVAR</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade modal-alongado" id="modal-suspenderCancelar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <!-- <h4 class="modal-title" id="myModalLabel">Modal title</h4> -->
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <h4>Deseja suspender ou cancelar proposta?</h4>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 box-suspender">
+                                        <p>Suspender permite acessar esta proposta novamente pelo monitor. Ela expira após 1 dia.
+                                        </p>
+                                        <button class="btn bt-vermelho">SUSPENDER PROPOSTA</button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 box-cancelar">
+                                        <p>Cancelar é para casos de FC ou desistência do cliente.</p>
+                                        <button class="btn bt-vermelho">CANCELAR PROPOSTA</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

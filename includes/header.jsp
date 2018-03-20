@@ -27,7 +27,7 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li data-target="#" class="dropdown-toggle" id="dropdownProposta" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <a href="javascript:;" class="bt-vermelho">Nova Proposta</a>
+                    <a href="javascript:;" class="bt-vermelho" data-toggle="modal" data-target="#modal-suspenderCancelar">Cancelar Proposta</a>
                 </li>
                 <!-- <ul class="dropdown-menu dropdown-proposta" aria-labelledby="dropdownProposta">
                     <li>
