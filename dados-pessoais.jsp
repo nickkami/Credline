@@ -153,6 +153,25 @@
                                     <li class="form-group">
                                         <input class="form-control form-custom data" placeholder="Data de Emissão">
                                     </li>
+                                    <li class="form-group">
+                                        <select class="form-control form-custom" placeholder="Orgão Emissor">
+                                            <option>SP</option>
+                                            <option>MG</option>
+                                            <option>RS</option>
+                                        </select>
+                                    </li>
+                                    <li class="form-group">
+                                        <div class="radio">
+                                            <label class="radio-inline">
+                                                <input type="radio" class="custom-radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 
+                                                <span>Fatura digital SMS e e-mail</span>
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" class="custom-radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 
+                                                <span>Em casa</span>
+                                            </label>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
                         </section>
@@ -410,39 +429,6 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn bt-vermelho" data-dismiss="modal">SALVAR</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="modal fade modal-alongado" id="modal-suspenderCancelar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                <!-- <h4 class="modal-title" id="myModalLabel">Modal title</h4> -->
-                            </div>
-                            <div class="modal-body">
-                                <div class="row">
-                                    <div class="col-xs-12">
-                                        <h4>Deseja suspender ou cancelar proposta?</h4>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-12 box-suspender">
-                                        <p>Suspender permite acessar esta proposta novamente pelo monitor. Ela expira após 1 dia.
-                                        </p>
-                                        <button class="btn bt-vermelho">SUSPENDER PROPOSTA</button>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-12 box-cancelar">
-                                        <p>Cancelar é para casos de FC ou desistência do cliente.</p>
-                                        <button class="btn bt-vermelho">CANCELAR PROPOSTA</button>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>

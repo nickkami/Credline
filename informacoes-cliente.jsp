@@ -63,7 +63,9 @@
 							</div>
 							<div class="col-xs-12 txt-cep">
 								<small>
-									<a href="javascript:;" data-toggle="modal" data-target="#myModal">O cliente não sabe o CEP.</a>
+									<a href="javascript:;" data-toggle="modal" data-target="#modal-naoSabeCep">
+										Cliente não sabe o CEP.
+									</a>
 								</small>
 							</div>
 						</div>
@@ -96,6 +98,46 @@
 								<h4>Av. Paulista, Bela Vista, São Paulo - SP</h4>
 							</div>
 						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="radio">
+									<ul>
+										<li>
+											<label class="radio-inline">
+												<input type="radio" class="custom-radio" name="informacaoCep" id="infoCep-radio1" value="option1">
+												<span>04067-000</span><br>
+												<p>Av.Paulista, 623 a 1342 - Lado ímpar Bela vista - São Paulo, SP</p>
+											</label>
+										</li>
+										<li>
+											<hr>
+										</li>
+										<li>
+											<label class="radio-inline">
+												<input type="radio" class="custom-radio" name="informacaoCep" id="infoCep-radio2" value="option2">
+												<span>04067-000</span><br>
+												<p>Av.Paulista, 623 a 1342 - Lado ímpar Bela vista - São Paulo, SP</p>
+											</label>
+										</li>
+										<li>
+											<hr>
+										</li>
+										<li>
+											<label class="radio-inline">
+												<input type="radio" class="custom-radio" name="informacaoCep" id="infoCep-radio3" value="option3">
+												<span>04067-000</span><br>
+												<p>Av.Paulista, 623 a 1342 - Lado ímpar Bela vista - São Paulo, SP</p>
+											</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<button class="btn bt-vermelho">SELECIONAR</button>
+							</div>
+						</div>
 					</form>
 				</div>
 			</div>
@@ -104,7 +146,7 @@
 	<!-- //MODAL -->
 </body>
 <!-- Scripts -->
-<jsp:include page="includes/scripts.jsp"/> 
+<jsp:include page="includes/scripts.jsp"/>  
 <!-- //Scripts -->
 
 </html>

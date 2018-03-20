@@ -44,6 +44,7 @@ nav{padding-right: 15px;padding-left: 15px;margin-right: auto;margin-left: auto;
 .navbar-nav{ margin: 7.5px 5px!important;}
 .navbar-nav > li > a{ line-height: 14px!important;}
 nav ul, nav ul li{display: inline;}
+.navbar-default .navbar-nav > li > a:focus{color: #fff;}
 nav .nome-loja a{padding: 0; font-size: 11px; color: #0080FF!important;background-color: transparent;}
 nav .nome-loja a:hover{background-color: transparent!important; color: $vermelho!important;}
 nav .nome-loja{padding: 10px 0 0 15px; font-size: 12px; color: #fff;}
@@ -61,8 +62,8 @@ a{color: $azul-claro;}
 .status{color: #F9BB60;}
 .status.aprovado{color: #54AFF2;}
 .status.negada{color: $vermelho;}
-.bt-vermelho{background-color: $vermelho;line-height:23px; color: #fff;border-radius: 45px; font-size: 12px; font-weight: bold; text-transform: uppercase; padding: 10px 20px 8px 20px!important; margin-top: 5px;}
-.bt-vermelho:hover{background-color: $vermelho-hover!important;color: #fff!important;}
+.bt-vermelho{background-color: $vermelho;line-height:23px; color: #fff;border-radius: 45px; font-size: 12px; text-transform: uppercase; padding: 10px 20px 8px 20px!important; margin-top: 5px;}
+.bt-vermelho:hover, .bt-vermelho:focus{background-color: $vermelho-hover!important;color: #fff!important;}
 .bt-branco{width: 70%;line-height:23px; text-align: left;line-height: 30px;color: #919191;}
 .bt-branco:hover{color: $azul-claro; border:solid thin $azul-claro; background-color: #fff;}
 .bt-cinza{background-color: #fff;line-height:23px; border:solid thin #ebebeb; color: #484848 ;border-radius: 45px; font-size: 12px; font-weight: bold; text-transform: uppercase; padding: 10px 20px 8px 20px!important; margin-top: 5px;}
@@ -257,6 +258,98 @@ ul{list-style: none; padding-left: 0px;}
         }
     } 
 }
+#modal-suspenderCancelar{
+    .box-suspender{
+        margin-top: 20px;
+    }
+    .box-cancelar{
+        margin-top: 40px;
+    }
+}
+#modal-naoSabeCep{
+    span{color: $cinza-claro; font-family: 'gotham_htfbook'};
+    .radio{margin-top: 30px;}
+    //RADIO BUTTON//   
+    .radio-inline p{
+        margin-left: 40px!important;
+        font-family: 'gotham_htfbook';
+        font-size: 13px;
+    }
+    .radio-inline + .radio-inline, .checkbox-inline + .checkbox-inline{
+        margin-left: 0px;
+    }
+    .radio label, .checkbox label{
+        padding-left: 0px;
+        margin-bottom: 15px;
+    }  
+    label span{
+        font-family: 'gotham_htfbold';
+        font-size:14px;
+        color: $marinho;
+        padding-top: 0px;
+    }
+    .radio{
+        color:$cinza-claro;
+        font-size:15px;
+        position:relative;
+      }
+      .radio span{
+        position:relative;
+        padding-left:40px;
+        padding-top: 0px;
+        margin-right: 10px;
+      }
+      .radio span:after{
+        content:'';
+        width:25px;
+        height:25px;
+        border:1px solid;
+        position:absolute;
+        left:0;
+        top:1px;
+        border-radius:100%;
+        -ms-border-radius:100%;
+        -moz-border-radius:100%;
+        -webkit-border-radius:100%;
+        box-sizing:border-box;
+        -ms-box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        -webkit-box-sizing:border-box;
+      }
+      .radio input[type="radio"]{
+         cursor: pointer; 
+        position:absolute;
+        width:100%;
+        height:100%;
+        z-index: 1;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+      }
+      .radio input[type="radio"]:checked + span{
+        color:$azul-claro;  
+      }
+      .radio input[type="radio"]:checked + span:before{
+          content:'';
+        width:15px;
+        height:15px;
+        position:absolute;
+        background:$azul-claro;
+        left:5px;
+        top:6px;
+        border-radius:100%;
+        -ms-border-radius:100%;
+        -moz-border-radius:100%;
+        -webkit-border-radius:100%;
+      }
+      //*****RADIO BUTTON*****//
+}
+#modal-cancelarMotivo{
+    .box-motivoSelect{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
 .foto-cliente{
     margin-top: $respiro-topo;
     .img-boneco{
@@ -434,14 +527,6 @@ section.box-dados-pessoais{
             font-size: 13px;
         }
     }  
-    #modal-suspenderCancelar{
-        .box-suspender{
-            margin-top: 20px;
-        }
-        .box-cancelar{
-            margin-top: 40px;
-        }
-    }
 }
 section.produtos-servicos{
     .titulo{
