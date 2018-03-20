@@ -65,7 +65,8 @@
 							<div class="col-md-8 col-xs-12 input-cep">
 								<div class="form-group has-feedback">
 									<label>CEP</label>
-									<input type="text" placeholder="CEP" class='form-control form-custom cep' required/>
+									<input type="text" placeholder="CEP" data-error="Por Favor, insira um CEP válido!" class='form-control form-custom cep' data-cep required/>
+									<div class="help-block with-errors"></div>
 								</div>
 							</div>
 							<div class="col-xs-12 txt-cep">

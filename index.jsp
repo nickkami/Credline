@@ -99,9 +99,9 @@
 								<img src="imgs/img-foto.jpg" alt="Angeline Jolie" />
 							</a>
 							<div class="carousel-caption">
-								<h3>Angeline Jolie</h3>
+								<h3>424.189.780-71</h3>
 								<p>Pré-aprovado por você</p>
-								<span>17/02/2018</span>
+								<span>17/02 | 15:48</span>
 							</div>
 						</div>
 						<div class="item">
@@ -109,9 +109,9 @@
 								<img src="imgs/img-foto.jpg" alt="Angeline Jolie" />
 							</a>
 							<div class="carousel-caption">
-								<h3>Angeline Jolie</h3>
+								<h3>424.189.780-71</h3>
 								<p>Pré-aprovado por Patricia Limeira</p>
-								<span>17/02/2018</span>
+								<span>17/02 | 15:48</span>
 							</div>
 						</div>
 						<div class="item">
@@ -119,9 +119,9 @@
 								<img src="imgs/img-foto.jpg" alt="Angeline Jolie" />
 							</a>
 							<div class="carousel-caption">
-								<h3>Angeline Jolie</h3>
+								<h3>424.189.780-71</h3>
 								<p>Pré-aprovado por você</p>
-								<span>17/02/2018</span>
+								<span>17/02 | 15:48</span>
 							</div>
 						</div>
 						<div class="item">
@@ -129,9 +129,9 @@
 								<img src="imgs/img-foto.jpg" alt="Angeline Jolie" />
 							</a>
 							<div class="carousel-caption">
-								<h3>Angeline Jolie</h3>
+								<h3>424.189.780-71</h3>
 								<p>Pré-aprovado por Patricia Limeira</p>
-								<span>17/02/2018</span>
+								<span>17/02 | 15:48</span>
 							</div>
 						</div>
 						<div class="item">
@@ -139,9 +139,9 @@
 								<img src="imgs/img-foto.jpg" alt="Angeline Jolie" />
 							</a>
 							<div class="carousel-caption">
-								<h3>Angeline Jolie</h3>
+								<h3>424.189.780-71</h3>
 								<p>Pré-aprovado por você</p>
-								<span>17/02/2018</span>
+								<span>17/02 | 15:48</span>
 							</div>
 						</div>
 						<div class="item">
@@ -149,9 +149,9 @@
 								<img src="imgs/img-foto.jpg" alt="Angeline Jolie" />
 							</a>
 							<div class="carousel-caption">
-								<h3>Angeline Jolie</h3>
+								<h3>424.189.780-71</h3>
 								<p>Pré-aprovado por você</p>
-								<span>17/02/2018</span>
+								<span>17/02 | 15:48</span>
 							</div>
 						</div>
 						<div class="item">
@@ -159,9 +159,9 @@
 								<img src="imgs/img-foto.jpg" alt="Angeline Jolie" />
 							</a>
 							<div class="carousel-caption">
-								<h3>Angeline Jolie</h3>
+								<h3>424.189.780-71</h3>
 								<p>Pré-aprovado por Patricia Limeira</p>
-								<span>17/02/2018</span>
+								<span>17/02 | 15:48</span>
 							</div>
 						</div>
 						<div class="item">
@@ -169,9 +169,9 @@
 								<img src="imgs/img-foto.jpg" alt="Angeline Jolie" />
 							</a>
 							<div class="carousel-caption">
-								<h3>Angeline Jolie</h3>
+								<h3>424.189.780-71</h3>
 								<p>Pré-aprovado por você</p>
-								<span>17/02/2018</span>
+								<span>17/02 | 15:48</span>
 							</div>
 						</div>
 						<div class="item">
@@ -179,9 +179,9 @@
 								<img src="imgs/img-foto.jpg" alt="Angeline Jolie" />
 							</a>
 							<div class="carousel-caption">
-								<h3>Angeline Jolie</h3>
+								<h3>424.189.780-71</h3>
 								<p>Pré-aprovado por você</p>
-								<span>17/02/2018</span>
+								<span>17/02 | 15:48</span>
 							</div>
 						</div>
 						<div class="item">
@@ -189,9 +189,9 @@
 								<img src="imgs/img-foto.jpg" alt="Angeline Jolie" />
 							</a>
 							<div class="carousel-caption">
-								<h3>Angeline Jolie</h3>
+								<h3>424.189.780-71</h3>
 								<p>Pré-aprovado por você</p>
-								<span>17/02/2018</span>
+								<span>17/02 | 15:48</span>
 							</div>
 						</div>
 					</div>
@@ -294,6 +294,39 @@
 							</tr>
 						</tbody>
 					</table>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 box-paginacao">
+					<nav aria-label="Page navigation">
+						<ul class="pagination">
+							<li class="disabled">
+								<a href="#" aria-label="Previous">
+									<span aria-hidden="true">&laquo;</span>
+								</a>
+							</li>
+							<li class="active">
+								<a href="#">1</a>
+							</li>
+							<li>
+								<a href="#">2</a>
+							</li>
+							<li>
+								<a href="#">3</a>
+							</li>
+							<li>
+								<a href="#">4</a>
+							</li>
+							<li>
+								<a href="#">5</a>
+							</li>
+							<li>
+								<a href="#" aria-label="Next">
+									<span aria-hidden="true">&raquo;</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
 				</div>
 			</div>
 		</section>

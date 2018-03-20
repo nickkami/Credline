@@ -41,13 +41,18 @@ $(document).ready(function () {
 		$('.box-propostaFinalizada').hide();
 	});
 
-	//::Validação CPF
+	//::Validações
 	$('form').validator({
         custom: {
             'cpf' : function($el) {
                 return !validarCPF($el.val())
             },
+        
+            'cep' : function($el) {
+                return !validacaoCep($el.val())
+            }
         }
+
     });
 
     //::Adicionando Box-Cartões Adicionais
@@ -165,4 +170,10 @@ function validarCPF(cpf) {
     if (rev != parseInt(cpf.charAt(10)))
         return false;       
     return true;   
+};
+
+//::Validacao CEP
+function validacaoCep($cep){
+    var cepReg = /^[0-9]{5}-[0-9]{3}$/;
+    return cepReg.test( $cep );
 };

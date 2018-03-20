@@ -260,69 +260,72 @@
                                 <!-- <h4 class="modal-title" id="myModalLabel">Modal title</h4> -->
                             </div>
                             <div class="modal-body">
-                                <label class="label-title">Qual endereço do cliente?</label>
-                                <div class="row">
-                                    <div class="col-xs-12">
-                                        <div class="form-group">
-                                            <label>Cep</label>
-                                            <input type="text" class="form-control form-custom">
+                                <form data-toggle="validator" role="form">
+                                    <label class="label-title">Qual endereço do cliente?</label>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="form-group has-feedback">
+                                                <label>Cep</label>
+                                                <input type="text" id="confiraEndereco-cep" class="form-control form-custom cep" data-error="Por Favor, insira um CEP válido."
+                                                    data-cep>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-12">
-                                        <div class="form-group">
-                                            <label>Endereço</label>
-                                            <input type="text" class="form-control form-custom">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <label>Endereço</label>
+                                                <input type="text" id="confiraEndereco-end" class="form-control form-custom">
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-12">
-                                        <div class="form-group">
-                                            <label>Número</label>
-                                            <input type="text" class="form-control form-custom">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <label>Número</label>
+                                                <input type="text" id="confiraEndereco-numero" class="form-control form-custom">
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-12">
-                                        <div class="form-group">
-                                            <label>&nbsp;</label>
-                                            <input type="text" class="form-control form-custom" placeholder="Complemento">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <label>&nbsp;</label>
+                                                <input type="text" id="confiraEndereco-comple" class="form-control form-custom" placeholder="Complemento">
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-12">
-                                        <div class="form-group">
-                                            <label>Bairro</label>
-                                            <input type="text" class="form-control form-custom">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <label>Bairro</label>
+                                                <input type="text" id="confiraEndereco-bairro" class="form-control form-custom">
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-12">
-                                        <div class="form-group">
-                                            <label>UF</label>
-                                            <select class="form-control form-custom">
-                                                <option>SP</option>
-                                            </select>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <label>UF</label>
+                                                <select id="confiraEndereco-uf" class="form-control form-custom">
+                                                    <option>SP</option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-12">
-                                        <div class="form-group">
-                                            <label>Cidade</label>
-                                            <input type="text" class="form-control form-custom">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <label>Cidade</label>
+                                                <input type="text" id="confiraEndereco-cidade" class="form-control form-custom">
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                
+                                </form>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn bt-vermelho">SALVAR</button>
+                                <button type="button" data-dismiss="modal" class="btn bt-vermelho">SALVAR</button>
                             </div>
                         </div>
                     </div>
