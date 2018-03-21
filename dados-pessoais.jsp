@@ -153,22 +153,24 @@
                                     <li class="form-group">
                                         <input class="form-control form-custom data" placeholder="Data de Emissão">
                                     </li>
-                                    <li class="form-group">
-                                        <select class="form-control form-custom" placeholder="Orgão Emissor">
+                                    <li class="form-group has-feddback">
+                                        <select class="form-control form-custom" required>
+                                            <option>Orgão Emissor</option>
                                             <option>SP</option>
                                             <option>MG</option>
                                             <option>RS</option>
                                         </select>
                                     </li>
-                                    <li class="form-group">
+                                    <li class="form-group radio-custom">
+                                        <label>Sexo</label>
                                         <div class="radio">
                                             <label class="radio-inline">
-                                                <input type="radio" class="custom-radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 
-                                                <span>Fatura digital SMS e e-mail</span>
+                                                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 
+                                                <span>Masculino</span>
                                             </label>
                                             <label class="radio-inline">
-                                                <input type="radio" class="custom-radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 
-                                                <span>Em casa</span>
+                                                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 
+                                                <span>Feminino</span>
                                             </label>
                                         </div>
                                     </li>
