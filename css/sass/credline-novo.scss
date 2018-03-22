@@ -665,6 +665,7 @@ section.produtos-servicos{
           //*****RADIO BUTTON*****//
           .box-outrosProdutos{
               margin-top: 15px;
+              margin-bottom: 15px;
               a{
                   text-decoration: underline;
                   font-size: 12px;
@@ -1024,8 +1025,11 @@ section.produtos-servicos{
             font-size: 12px;
             font-family: 'gotham_htfbook';
         }
+        .txt-produto{
+            color: $cinza-claro;
+        }
          h5{
-             color: $vermelho;
+             color: $cinza-claro;
              font-weight: bold;
              font-family: 'gotham_htfbold';
          }
@@ -1053,9 +1057,10 @@ section.produtos-servicos{
         }
         ul.box-btn-adquirir{margin-bottom:-36px;}
     }
-    .card-produto.adquirir{
-        color: $cinza-claro!important;
-        h5{color: $cinza-claro!important;}
+    .card-produto.adquirido{
+        color: $marinho!important;
+        h5{color:#FF3333 !important;}
+        .txt-produto{color: $marinho!important;}
     }
     .box-botao{
         margin-top: 30px;

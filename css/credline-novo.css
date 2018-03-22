@@ -781,7 +781,8 @@ section.produtos-servicos .box-impressaoContrato {
     -moz-border-radius: 100%;
     -webkit-border-radius: 100%; }
   .edicao-info .card .box-outrosProdutos {
-    margin-top: 15px; }
+    margin-top: 15px;
+    margin-bottom: 15px; }
     .edicao-info .card .box-outrosProdutos a {
       text-decoration: underline;
       font-size: 12px; }
@@ -1067,8 +1068,10 @@ section.produtos-servicos .box-impressaoContrato {
     color: #919191;
     font-size: 12px;
     font-family: 'gotham_htfbook'; }
+  #modal-produtosServicos .card-produto .txt-produto {
+    color: #919191; }
   #modal-produtosServicos .card-produto h5 {
-    color: #FF3636;
+    color: #919191;
     font-weight: bold;
     font-family: 'gotham_htfbold'; }
   #modal-produtosServicos .card-produto ul {
@@ -1087,10 +1090,12 @@ section.produtos-servicos .box-impressaoContrato {
     text-align: right; }
   #modal-produtosServicos .card-produto ul.box-btn-adquirir {
     margin-bottom: -36px; }
-#modal-produtosServicos .card-produto.adquirir {
-  color: #919191 !important; }
-  #modal-produtosServicos .card-produto.adquirir h5 {
-    color: #919191 !important; }
+#modal-produtosServicos .card-produto.adquirido {
+  color: #142d4e !important; }
+  #modal-produtosServicos .card-produto.adquirido h5 {
+    color: #FF3333 !important; }
+  #modal-produtosServicos .card-produto.adquirido .txt-produto {
+    color: #142d4e !important; }
 #modal-produtosServicos .box-botao {
   margin-top: 30px;
   text-align: center; }

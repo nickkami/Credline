@@ -131,9 +131,30 @@ $(document).ready(function () {
         $("#modal-cartao-parente").text(cartao_parente);
         $("#modal-cartao-cpf").text(cartao_cpf);
         $("#modal-cartao-nascimento").text(cartao_nascimento);
-    })
+    });
+
 });
 /****************** //DOCUMENT.READY*******************/
+
+//::Altera o Status de Contratar Produto
+function mudarCor(t) {
+    debugger;
+    if ($(t).hasClass('bt-adquirir')) {
+        $(t).closest(".card-produto").addClass('adquirido'); 
+        $(t).closest(".card-produto.adquirido").find(".box-selo").append(
+            "<ul class='box-btn-adquirir'>"+
+                "<li>"+
+                    "<span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span>"+
+                "</li>"+
+            "</ul>"
+        )
+        $(t).removeClass("bt-vermelho bt-adquirir").addClass("bt-cinza bt-remover").html("REMOVER");
+    } else {
+        $(t).closest(".card-produto").removeClass('adquirido'); 
+        $(t).closest(".card-produto").find(".box-selo").empty();
+        $(t).removeClass("bt-cinza bt-remover").addClass("bt-vermelho bt-adquirir").html("ADQUIRIR");
+    }
+}
 //:Validação CPF
 function validarCPF(cpf) {  
     cpf = cpf.replace(/[^\d]+/g,'');    

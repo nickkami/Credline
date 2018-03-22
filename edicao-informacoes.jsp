@@ -107,9 +107,11 @@
                                     <div class="col-xs-12">
                                         <span>R$5,90</span>
                                     </div>
-                                    <div class="col-xs-12 box-outrosProdutos">
-                                        <a href="javascript;:" data-toggle="modal" data-target="#modal-produtosServicos">Contratar outros produtos</a>
-                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 box-outrosProdutos">
+                                    <a href="javascript;:" data-toggle="modal" data-target="#modal-produtosServicos">Contratar outros produtos</a>
                                 </div>
                             </div>
                             <h5>Entrega de Fatura</h5>
@@ -152,9 +154,10 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-xs-6">
-                                        <div class="card-produto adquirir">
+                                        <div class="card-produto">
                                             <div class="row">
                                                 <div class="col-xs-12">
+                                                    <div class="box-selo"></div>
                                                     <h5>Cartão Mais!</h5>
                                                     <ul>
                                                         <li>
@@ -165,7 +168,7 @@
                                                             Rede.
                                                         </li>
                                                         <li class="box-botaoAdquirir">
-                                                            <button class="btn bt-cinza">ADQUIRIR</button>
+                                                            <button class="btn bt-vermelho bt-adquirir" onClick='mudarCor(this)'>ADQUIRIR</button>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -173,14 +176,16 @@
                                         </div>
                                     </div>
                                     <div class="col-xs-6">
-                                        <div class="card-produto">
+                                        <div class="card-produto adquirido">
                                             <div class="row">
                                                 <div class="col-xs-12">
-                                                    <ul class="box-btn-adquirir">
-                                                        <li>
-                                                            <span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>
-                                                        </li>
-                                                    </ul>
+                                                    <div class="box-selo">
+                                                        <ul class="box-btn-adquirir">
+                                                            <li>
+                                                                <span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                     <h5>Cartão Mais!</h5>
                                                     <ul>
                                                         <li>
@@ -191,7 +196,7 @@
                                                             Rede.
                                                         </li>
                                                         <li class="box-botaoAdquirir">
-                                                            <button class="btn bt-cinza">REMOVER</button>
+                                                            <button class="btn bt-cinza bt-remover" onClick='mudarCor(this)'>REMOVER</button>
                                                         </li>
                                                     </ul>
                                                 </div>
