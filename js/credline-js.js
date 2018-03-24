@@ -66,6 +66,9 @@ $(document).ready(function () {
                             "<a href='' data-toggle='modal' data-target='#modal-cartoesAdicionais'>"+
                                 "<img src='imgs/edit-3.png' alt='editar'> Editar"+
                             "</a>"+
+                            "<a href='javascript:;' class='excluir-card' onClick='limpaCard(this)'>"+
+                                "<img src='imgs/trash-icon.png' alt='editar'>"+
+                            "</a>"+
                         "</div>"+
                     "</div>"+
                     "<div class='row'>"+
@@ -116,8 +119,9 @@ $(document).ready(function () {
     });
     //::Remove Cartões Adicionais
     $(".box-desejaCartao .bt-branco").on('click',function(){
-        $(".box-cartaoAdicional").empty();
+        limpaCard();
     });
+
     
     //::Setando Valores Cartões Adicionais
     $("#modal-cartoesAdicionais .bt-vermelho").on('click',function(){
@@ -136,9 +140,13 @@ $(document).ready(function () {
 });
 /****************** //DOCUMENT.READY*******************/
 
+//::Remove Cartões Adicionais
+function limpaCard(){
+    $(".box-cartaoAdicional").empty();
+}
+
 //::Altera o Status de Contratar Produto
 function mudarCor(t) {
-    debugger;
     if ($(t).hasClass('bt-adquirir')) {
         $(t).closest(".card-produto").addClass('adquirido'); 
         $(t).closest(".card-produto.adquirido").find(".box-selo").append(

@@ -629,6 +629,8 @@ section.box-dados-pessoais .box-cartaoAdicional {
   width: 70%; }
   section.box-dados-pessoais .box-cartaoAdicional .box-editar {
     text-align: right; }
+  section.box-dados-pessoais .box-cartaoAdicional .excluir-card {
+    margin-left: 15px; }
   section.box-dados-pessoais .box-cartaoAdicional .card-cartao {
     margin-top: 15px;
     padding: 15px;
