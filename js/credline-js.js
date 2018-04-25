@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
 	//::Máscaras
 	var SPMaskBehavior = function (val) {
 		return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
@@ -27,7 +28,7 @@ $(document).ready(function () {
 	$('[data-toggle="tooltip"]').tooltip()
 
 	$(".icone-toggle span").on('click',function(){
-		$(this).toggleClass("glyphicon-chevron-up glyphicon-chevron-down");
+		$(this).closest('span').toggleClass("glyphicon-chevron-up glyphicon-chevron-down");
 	});
 
 	$(".foto-cliente .bt-vermelho").on('click',function(){
@@ -42,18 +43,18 @@ $(document).ready(function () {
 	});
 
 	//::Validações
-	$('form').validator({
-        custom: {
-            'cpf' : function($el) {
-                return !validarCPF($el.val())
-            },
+	// $('form').validator({
+    //     custom: {
+    //         'cpf' : function($el) {
+    //             return !validarCPF($el.val())
+    //         },
         
-            'cep' : function($el) {
-                return !validacaoCep($el.val())
-            }
-        }
+    //         'cep' : function($el) {
+    //             return !validacaoCep($el.val())
+    //         }
+    //     }
 
-    });
+    // });
 
     //::Adicionando Box-Cartões Adicionais
     $("#modal-cartoesAdicionais .bt-vermelho").on('click',function(){
@@ -137,8 +138,32 @@ $(document).ready(function () {
         $("#modal-cartao-nascimento").text(cartao_nascimento);
     });
 
+    $('#modal-imprimindo').modal('show');
+    setTimeout(function() {
+        $('#modal-imprimindo').modal('hide');
+        // $('#modal-impressaoSucesso').modal('show');
+    }, 2000);
+
+    //::Exibir box de nova pesquisa
+    $('.bt-nova-proposta').on('click', function(){
+        $(this).closest('li').find('.box-filtros').toggleClass('hide');
+    })
+    $('.box-filtros').on('mouseleave', function(){
+        $(this).toggleClass('hide');
+    })
+    $('.bt-buscar').on('click', function(){
+        $(this).closest('.actions').find('.box-filtros').toggleClass('hide');
+    })
+
+    //::Check Cliente não tem Email
+    var check = $('.check-cliente-email .check');
+    $('.check-cliente-email .check').on('click', function () {
+       $(this).toggleClass('active');
+    });
+
 });
 /****************** //DOCUMENT.READY*******************/
+
 
 //::Remove Cartões Adicionais
 function limpaCard(){
@@ -205,4 +230,15 @@ function validarCPF(cpf) {
 function validacaoCep($cep){
     var cepReg = /^[0-9]{5}-[0-9]{3}$/;
     return cepReg.test( $cep );
+};
+
+
+//::Loading
+function loading(){
+    $(".loading").show();
+    $(".modal-backdrop.fade.in.back-load").show();
+    setTimeout(function(){
+        $(".loading").hide();
+        $(".modal-backdrop.fade.in.back-load").hide();
+    },2000 )
 };

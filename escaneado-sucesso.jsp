@@ -21,7 +21,12 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12 box-papel">
+                <div class="col-xs-6 box-papel">
+                    <div class="img-papel">
+                        <img class="contrato-papel" src="imgs/contrato.png">
+                    </div>
+                </div>
+                <div class="col-xs-6 box-papel">
                     <div class="img-papel">
                         <img class="contrato-papel" src="imgs/contrato.png">
                     </div>
@@ -30,6 +35,16 @@
             <div class="row">
                 <div class="col-xs-12 linha">
                     <a href="javascript:;">Escanear documento</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-offset-3 col-xs-6">
+                    <div class="form-group selecione-escaner">
+                        <label></label>
+                        <select class="form-control form-custom">
+                            <option>Selecione</option>
+                        </select>
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -42,11 +57,17 @@
             </div>
             <div class="row">
                 <div class="col-xs-12 box-botao">
-                    <button class="btn bt-vermelho">FINALIZAR</button>
+                    <button class="btn bt-vermelho" onClick="loading()">FINALIZAR</button>
                 </div>
             </div>
+            
         </section>
     </div>
+    <div class="loading">
+        <img src="imgs/Loading_icon.gif" alt="loading">
+    </div>
+    <div class="modal-backdrop fade in back-load"></div>
+    
 </body>
 <!-- Scripts -->
 <jsp:include page="includes/scripts.jsp"/> 

@@ -29,6 +29,16 @@
                 </div>
             </div>
             <div class="row">
+                <div class="col-xs-offset-3 col-xs-6">
+                    <div class="form-group selecione-escaner">
+                        <label></label>
+                        <select class="form-control form-custom">
+                            <option>Selecione</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-xs-12 box-botao">
                     <button class="btn bt-vermelho">ESCANEAR</button>
                 </div>

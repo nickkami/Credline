@@ -52,15 +52,17 @@
 			<form data-toggle="validator" role="form">
 				<div class="row">
 					<div class="col-xs-12">
-						<h4>Propostas pré-aprovadas?</h4>
+						<h5>Propostas pré-aprovadas?</h5>
 					</div>
 					<div class="col-xs-12">
 						<div class='box'>
 							<div class="col-xs-6">
+								<div class="col-xs-1">
+								</div>
 								<div class="col-xs-2">
 									<img src="imgs/ico-propostas-preaprovadas.jpg" />
 								</div>
-								<div class="col-xs-10">
+								<div class="col-xs-8">
 									<div class="form-group has-feedback">
 										<label>Digite o CPF do cliente para retornar o preenchimento da proposta</label>
 										<input type="text" placeholder="CPF" class='form-control cpf' data-error="Por favor, informe seu CPF ou um CPF válido" data-cpf
@@ -69,8 +71,11 @@
 										<small class="clearfix">Loja Kallan ABC - Loja 1</small>
 									</div>
 								</div>
+								<div class="col-xs-1">
+								</div>
 							</div>
-							<div class="col-xs-6">
+							<div class="col-xs-1">
+								</div>							<div class="col-xs-5 area-o-que-pode-fazer">
 								<label>O que você pode fazer:</label>
 								<ul>
 									<li>Iniciar uma nova proposta</li>
@@ -89,10 +94,15 @@
 		<section>
 			<div class="row">
 				<div class="col-xs-12">
-					<h4>Propostas pré-aprovadas no aplicativo</h4>
+					<h5>Propostas pré-aprovadas no aplicativo</h5>
 				</div>
-
+				<div class="col-xs-12 msg-sem-propostas">
+					<h5>Nenhuma proposta no momento.</h5>
+				</div>
 				<div class="col-xs-12">
+					<div class="area-info-nenhuma-proposta">
+						<label></label>
+					</div>
 					<div class="owl-carousel">
 						<div class="item">
 							<a href='javascript:;'>
@@ -199,37 +209,53 @@
 			</div>
 		</section>
 		<section>
-			<div class="row">
+			<div class="row area-historico">
 				<div class="col-xs-12">
-					<h4>Histórico</h4>
+					<h5>Histórico</h5>
 					<div class="actions pull-right">
-						<label class='area-busca'>
-							<input type='text' class='form-control inatv' />
-							<a href='javascript:;'>
-								<span class='glyphicon glyphicon-search'></span> Buscar</a>
-						</label>
-						<a href='javascript:;' class='dropdown-toggle' id="dropdownFiltro" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-							<span class="glyphicon glyphicon-filter"></span> Filtrar</a>
-						<ul class="dropdown-menu" aria-labelledby="dropdownFiltro">
-							<li>
-								<a href="#">Action</a>
-							</li>
-							<li>
-								<a href="#">Another action</a>
-							</li>
-							<li>
-								<a href="#">Something else here</a>
-							</li>
-						</ul>
+						<div class="area-bt-filtro">
+							<a href='javascript:;'  class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<span class="glyphicon glyphicon-filter"></span> Filtrar
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="javascript:carregarHistorico('PROPOSTA_AVALIADA_APROVADA');">Aprovada</a>
+								</li>
+								<li>
+									<a href="javascript:carregarHistorico('PROPOSTA_AVALIADA_REJEITADA');">Rejeitada</a>
+								</li>
+								<li>
+									<a href="javascript:carregarHistorico('PROPOSTA_PRE_APROVADA');">Pendente</a>
+								</li>
+							</ul>
+						</div>
+						<div class="area-bt-busca">
+							<a href='javascript:;' class="bt-buscar">
+								<span class='glyphicon glyphicon-search'></span> Buscar
+							</a>
+							<div class="box-filtros hide">
+								<span class="seta"></span>
+								<div class="row cmp-cpf">
+			                        <div class="col-xs-12">
+			                            <input type="text" placeholder="Digite aqui" class='form-control' />
+			                        </div>
+			                    </div>
+		                        <div class="row">
+		                            <div class="col-xs-12 text-right">
+		                                <a class="btn bt-vermelho" href="#">OK</a>
+		                            </div>
+		                        </div>
+			                </div>
+		                </div>
 					</div>
 				</div>
-				<div class="col-xs-12">
-					<table class='table table-hover table-striped'>
+				<div class="col-xs-12 bg-branco-historico">
+					<table class='table table-hover'>
 						<thead>
 							<tr>
 								<th>Data/Hora Início
 									<a href='javascript:;' class="icone-toggle">
-										<span class="glyphicon glyphicon-chevron-down"></span>
+										<span class="glyphicon glyphicon-chevron-up"></span>
 									</a>
 								</th>
 								<th>Cliente
@@ -255,10 +281,9 @@
 								<td>Luiza Luana Mariane Nascimento</td>
 								<td>985.824.845-55</td>
 								<td>
-									<span class="status aprovado">
-										<span class="glyphicon glyphicon-ok-circle"></span>
+									<div class="status aprovado">
 										Proposta aprovada
-									</span>
+									</div>
 								</td>
 							</tr>
 							<tr>
@@ -266,9 +291,9 @@
 								<td>Luiza Luana Mariane Nascimento</td>
 								<td>985.824.845-55</td>
 								<td>
-									<span class="status">
+									<div class="status">
 										Aguardando impressão de cartão
-									</span>
+									</div>
 								</td>
 							</tr>
 							<tr>
@@ -276,10 +301,9 @@
 								<td>Luiza Luana Mariane Nascimento</td>
 								<td>985.824.845-55</td>
 								<td>
-									<span class="status negada">
-										<span class="glyphicon glyphicon-remove-circle"></span>
+									<div class="status negada">
 										Proposta negada
-									</span>
+									</div>
 								</td>
 							</tr>
 							<tr>
@@ -287,9 +311,9 @@
 								<td>Luiza Luana Mariane Nascimento</td>
 								<td>985.824.845-55</td>
 								<td>
-									<span class="status">
+									<div class="status">
 										Aguardando impressão de cartão
-									</span>
+									</div>
 								</td>
 							</tr>
 						</tbody>

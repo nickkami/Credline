@@ -89,7 +89,7 @@
         <form data-toggle="validator" role="form">
             <section class="box-dados-pessoais">
                 <div class="row">
-                    <div class="col-xs-offset-2 col-xs-8">
+                    <div class="col-xs-offset-2 col-xs-9">
                         <div class="container-proposta-cliente">
                             <div class="row">
                                 <div class="col-xs-2 mini-foto-cliente">
@@ -108,6 +108,13 @@
                                     <a href="javascript:;">X</a>
                                 </div>
                             </div>
+                        </div>
+                        <br>
+                        <div class="alert alert-danger alert-dismissible" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <strong>Oh snap!</strong> Change a few things up and try submitting again.
                         </div>
                     </div>
                 </div>
@@ -132,7 +139,7 @@
                                 <ul>
                                     <li><button type="button" class="btn btn-default bt-branco">RG</button></li>
                                     <li><button type="button" class="btn btn-default bt-branco">CNH</button></li>
-                                    <li><button type="button" class="btn btn-default bt-branco">RNE (Estrangeiros)</button></li>
+                                    <li><button type="button" class="btn btn-default bt-branco">RNE <span class="lbl-bt-dados">(Estrangeiros)</span></button></li>
                                     <li><button type="button" class="btn btn-default bt-branco">OUTROS</button></li>
                                 </ul>
                             </div>
@@ -148,14 +155,14 @@
                                         <input class="form-control form-custom" placeholder="N° do RG">
                                     </li>
                                     <li class="form-group">
-                                        <input class="form-control form-custom" placeholder="Nome da Mãe">
+                                        <input class="form-control form-custom" placeholder="Nome da mãe">
                                     </li>
                                     <li class="form-group">
-                                        <input class="form-control form-custom data" placeholder="Data de Emissão">
+                                        <input class="form-control form-custom data" placeholder="Data de emissão">
                                     </li>
                                     <li class="form-group has-feddback">
                                         <select class="form-control form-custom" required>
-                                            <option>Orgão Emissor</option>
+                                            <option>Orgão emissor</option>
                                             <option>SP</option>
                                             <option>MG</option>
                                             <option>RS</option>
@@ -165,14 +172,20 @@
                                         <label>Sexo</label>
                                         <div class="radio">
                                             <label class="radio-inline">
-                                                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 
-                                                <span>Masculino</span>
-                                            </label>
-                                            <label class="radio-inline">
                                                 <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 
                                                 <span>Feminino</span>
                                             </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 
+                                                <span>Masculino</span>
+                                            </label>
                                         </div>
+                                    </li>
+                                    <li class="form-group">
+                                        <input class="form-control form-custom" placeholder="UF de origem">
+                                    </li>
+                                    <li class="form-group">
+                                        <input class="form-control form-custom" placeholder="Cidade de origem">
                                     </li>
                                 </ul>
                             </div>
@@ -185,25 +198,31 @@
                                         <input type="email" id="dados-email-cliente" class="form-control form-custom" data-error="Por favor, insira um e-mail válido." placeholder="E-mail">
                                         <div class="help-block with-errors"></div>
                                     </li>
+                                    <li class="form-group checkbox-custom">
+                                        <div class="checkbox">
+                                            <label class="checkbox-inline check-cliente-email">
+                                                <div class="check"></div>
+                                                <input type="checkbox" class="">
+                                                <span>Cliente não possui e-mail</span>
+                                            </label>
+
+                                        </div>
+                                    </li>
                                     <li class="form-group has-feedback">
                                         <input type="email" data-match="#dados-email-cliente" class="form-control form-custom" data-error="E-mail não coincide com o digitado acima!" placeholder="Confirmar E-mail">
                                         <div class="help-block with-errors"></div>
-                                        <div class="checkbox">
-                                            <label class="checkbox">
-                                                <input type="checkbox"> Cliente não possui e-mail
-                                            </label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <span>Cliente possui telefone adicional?</span>
-                                    </li>
-                                    <li>
-                                        <button type="button" class="btn btn-default bt-branco">SIM</button>
-                                    </li>
-                                    <li>
-                                        <button type="button" class="btn btn-default bt-branco">NÃO</button>
                                     </li>
                                 </ul>
+                                <div class="area-possui-email">
+                                    <span>Cliente possui telefone adicional?</span>
+                                    <div class="clearfix"></div>
+                                    <div class="col-a">
+                                        <button type="button" class="btn btn-default bt-branco">SIM</button>
+                                    </div>
+                                    <div class="col-b">
+                                        <button type="button" class="btn btn-default bt-branco">NÃO</button>
+                                    </div>
+                                </div>
                             </div>
                             <div class="box-assalariado">
                                 <label>O cliente é assalariado. Onde ele trabalha?</label>
@@ -217,6 +236,11 @@
                                     <li class="form-group">
                                         <input type="text" class="form-control form-custom sp_celphones" placeholder="Telefone da empresa">
                                     </li>
+                                    <li>
+                                        <a href="#" class="nao-sabe-numero-telefone">
+                                            Cliente não sabe o número
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="box-confiraEndereco">
@@ -225,7 +249,7 @@
                                         <label>Confira o endereço do cliente</label>
                                     </li>
                                     <li>
-                                        <span>
+                                        <span class="endereco">
                                             Avenida Brigadeiro Faria Lima, 2954 - Jardim Paulistano - 
                                             São Paulo, SP 01451-000
                                         </span>
@@ -235,9 +259,10 @@
                                             <img src="imgs/edit-3.png" alt="editar"> Editar
                                         </a>
                                     </li>
-                                    <li class="form-group">
-                                        <input type="text" class="form-control form-custom" placeholder="Complemento (opcional)">
-                                    </li>
+                                    <!-- <li class="form-group cmp-complemento">
+                                        <input type="text" class="form-control form-custom" placeholder="Complemento">
+                                        <span class="lbl-opcional">(Opcional)</span>
+                                    </li> -->
                                 </ul>
                             </div>
                         </section>
@@ -246,7 +271,7 @@
                                 <label>Como o cliente deseja receber sua fatura?</label>
                                 <ul>
                                     <li>
-                                        <button type="button" class="btn btn-default bt-branco">FATURA DIGITAL SMS e E-MAIL</button>
+                                        <button type="button" class="btn btn-default bt-branco">FATURA DIGITAL <span class="lbl-bt-dados">Sms e e-mail</span></button>
                                     </li>
                                     <li>
                                         <button type="button" class="btn btn-default bt-branco">EM CASA</button>
@@ -309,7 +334,7 @@
                                     <div class="row">
                                         <div class="col-xs-12">
                                             <div class="form-group has-feedback">
-                                                <label>Cep</label>
+                                                <label>CEP</label>
                                                 <input type="text" id="confiraEndereco-cep" class="form-control form-custom cep" data-error="Por Favor, insira um CEP válido."
                                                     data-cep>
                                                 <div class="help-block with-errors"></div>
@@ -319,7 +344,7 @@
                                     <div class="row">
                                         <div class="col-xs-12">
                                             <div class="form-group">
-                                                <label>Endereço</label>
+                                                <label>ENDEREÇO</label>
                                                 <input type="text" id="confiraEndereco-end" class="form-control form-custom">
                                             </div>
                                         </div>
@@ -327,7 +352,7 @@
                                     <div class="row">
                                         <div class="col-xs-12">
                                             <div class="form-group">
-                                                <label>Número</label>
+                                                <label>NÚMERO</label>
                                                 <input type="text" id="confiraEndereco-numero" class="form-control form-custom">
                                             </div>
                                         </div>
@@ -343,7 +368,7 @@
                                     <div class="row">
                                         <div class="col-xs-12">
                                             <div class="form-group">
-                                                <label>Bairro</label>
+                                                <label>BAIRRO</label>
                                                 <input type="text" id="confiraEndereco-bairro" class="form-control form-custom">
                                             </div>
                                         </div>
@@ -361,15 +386,17 @@
                                     <div class="row">
                                         <div class="col-xs-12">
                                             <div class="form-group">
-                                                <label>Cidade</label>
+                                                <label>CIDADE</label>
                                                 <input type="text" id="confiraEndereco-cidade" class="form-control form-custom">
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <button type="button" data-dismiss="modal" class="btn bt-vermelho">SALVAR</button>
+                                        </div>
+                                    </div>
                                 </form>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" data-dismiss="modal" class="btn bt-vermelho">SALVAR</button>
                             </div>
                         </div>
                     </div>
@@ -409,7 +436,7 @@
                                         <div class="col-xs-12">
                                             <div class="form-group has-feedback">
                                                 <label></label>
-                                                <input type="text" id="addCartao-data" class="form-control form-custom data" placeholder="Data de Nascimento" required>
+                                                <input type="text" id="addCartao-data" class="form-control form-custom data" placeholder="Data de nascimento" required>
                                             </div>
                                         </div>
                                     </div>
@@ -427,10 +454,12 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <button type="button" class="btn bt-vermelho" data-dismiss="modal">SALVAR</button>
+                                        </div>
+                                    </div>
                                 </form>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn bt-vermelho" data-dismiss="modal">SALVAR</button>
                             </div>
                         </div>
                     </div>

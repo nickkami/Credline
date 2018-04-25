@@ -4,5 +4,5 @@
 <script type="text/javascript" src='js/lib/owlcarousel/dist/owl.carousel.js'></script>
 <script type="text/javascript" src='js/bootstrap.min.js'></script>
 <script type="text/javascript" src="js/lib/jquery.mask.min.js"></script>
-<script type="text/javascript" src="js/lib/validator.min.js"></script>
+<!-- <script type="text/javascript" src="js/lib/validator.min.js"></script> -->
 <script type="text/javascript" src='js/credline-js.js'></script>

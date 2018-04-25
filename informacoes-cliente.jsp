@@ -25,6 +25,16 @@
 								<h5>Preencha as informações do cliente abaixo:</h5>
 							</div>
 						</div>
+						<div class="row">
+							<div class="col-md-8 col-xs-12">
+								<div class="form-group has-feedback">
+									<label>&nbsp;</label>
+									<input type="text" id="addCartao-cpf" class="form-control form-custom cpf" data-error="Por favor, informe seu CPF ou um CPF válido"
+									 placeholder="CPF" data-cpf required>
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+						</div>
 						<div class="row celular-cliente">
 							<div class="col-md-8 col-xs-12 input-cel">
 								<div class="form-group has-feedback">
@@ -63,10 +73,18 @@
 							</div>
 							<div class="col-xs-12 txt-cep">
 								<small>
-									<a href="javascript:;" data-toggle="modal" data-target="#modal-naoSabeCep">
+									<a href="javascript:;" data-backdrop="static" data-keyboard="false" data-toggle="modal" data-target="#modal-naoSabeCep">
 										Cliente não sabe o CEP.
 									</a>
 								</small>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-8 col-xs-12 input-numero">
+								<div class="form-group">
+									<label></label>
+									<input type="text" class="form-control form-custom" placeholder="Número" required>
+								</div>
 							</div>
 						</div>
 						<div class="row">
@@ -81,6 +99,64 @@
 	</div>
 
 	<!-- MODAL -->
+	<div class="modal fade modal-alongado" id="modal-pesquisarCepCliente" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<!-- <h4 class="modal-title" id="myModalLabel">Modal title</h4> -->
+				</div>
+				<div class="modal-body">
+					<form data-toggle="validator" role="form">
+						<h5>Preencha os campos para pesquisar o CEP do cliente.</h5>
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="form-group">
+									<label>ENDEREÇO</label>
+									<input type="text" class="form-control form-custom">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="form-group">
+									<label>BAIRRO</label>
+									<input type="text" class="form-control form-custom">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="form-group">
+									<label>UF</label>
+									<select id="confiraEndereco-uf" class="form-control form-custom">
+										<option>SP</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="form-group">
+									<label>CIDADE</label>
+									<input type="text" id="confiraEndereco-cidade" class="form-control form-custom">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<button type="button" data-dismiss="modal" class="btn bt-vermelho">PESQUISAR</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
 	<div class="modal fade modal-alongado" id="modal-naoSabeCep" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
@@ -139,6 +215,84 @@
 							</div>
 						</div>
 					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modal-alongado" id="modal-naoPossivelSemCelular" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<!-- <h4 class="modal-title" id="myModalLabel">Modal title</h4> -->
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-xs-12">
+							<img src="imgs/noCelular-icon.png" alt="sem celular">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<h3>Não é possível continuar sem um celular.</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 txt">
+							É obrigatório estar com um celular ligado no momento da aquisição do cartão. 
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 txt-cinza">
+							<span>Nós precisamos verificar que esse celular é realmente do cliente.</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 box-continuar">
+							<a href="javascript:;">
+								<button class="btn bt-vermelho">SUSPENDER PROPOSTA</button>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modal-alongado" id="modal-celularBateria" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<!-- <h4 class="modal-title" id="myModalLabel">Modal title</h4> -->
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-xs-12">
+							<img src="imgs/celular-icon.png" alt="sem celular">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<h3>O celular do cliente está ligado e com bateria?</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 txt">
+							No final da proposta, precisaremos que ele responda uma verificação de celular.
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 box-botoes">
+							<button class="btn bt-vermelho bt-sim">SIM</button>
+							<button class="btn bt-cinza bt-nao">NÃO</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

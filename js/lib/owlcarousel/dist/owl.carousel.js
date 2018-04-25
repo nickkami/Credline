@@ -2813,7 +2813,7 @@
 	 */
 	Navigation.Defaults = {
 		nav: false,
-		navText: [ '<span class="glyphicon glyphicon-circle-arrow-left"></span>', '<span class="glyphicon glyphicon-circle-arrow-right"></span>' ],
+		navText: [ '←', '→' ],
 		navSpeed: false,
 		navElement: 'div',
 		navContainer: false,

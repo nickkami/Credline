@@ -25,7 +25,7 @@
                             <h5>Dados Pessoais</h5>
                             <div class="form-group">
                                 <label>NOME</label>
-                                <input type="text" class="form-control form-custom" value="MARIA DA SILVA">
+                                <input type="text" class="form-control form-custom" value="Maria da Silva">
                             </div>
                             <div class="form-group">
                                 <label>DATA DE NASCIMENTO</label>
@@ -53,7 +53,7 @@
                             <div class="form-group">
                                 <ul>
                                     <li>
-                                        <span>
+                                        <span class="info-endereco">
                                             Avenida Brigadeiro Faria Lima, 2954 - Jardim Paulistano - São Paulo,SP 01451-000
                                         </span>
                                     </li>
@@ -64,7 +64,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <h5>Contato</h5>
+                            <h5 class="contato">Contato</h5>
                             <div class="form-group">
                                 <label>CELULAR</label>
                                 <input type="text" class="form-control form-custom" value="(11) 99999-9999">
@@ -121,7 +121,7 @@
                                         <input type="radio" class="custom-radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
                                         <span>Fatura digital SMS e e-mail</span>
                                     </label>
-                                    <label class="radio-inline">
+                                    <label class="radio-inline emCasa">
                                         <input type="radio" class="custom-radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
                                         <span>Em casa</span>
                                     </label>

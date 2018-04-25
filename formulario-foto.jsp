@@ -23,7 +23,7 @@
 					</div>
 					<div class="row">
 						<div class="col-xs-12">
-								<img src="imgs/page-1.png" alt="foto">
+							<img src="imgs/page-1.png" alt="foto">
 						</div>
 					</div>
 				</div>
@@ -49,6 +49,16 @@
 						<div class="col-xs-12">
 							<h5>Siga o exemplo</h5>
 							<span>Enquadre o rosto na moldura.</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-5 select-camera">
+							<div class="form-group">
+								<select class="form-control form-custom">
+									<option>Selecione a Câmera</option>
+									<option>Câmera 2</option>
+								</select>
+							</div>
 						</div>
 					</div>
 					<div class="row">
@@ -111,6 +121,16 @@
 						</div>
 					</div>
 					<div class="row">
+						<div class="col-xs-12 select-camera">
+							<div class="form-group">
+								<select class="form-control form-custom">
+									<option>Selecione a Câmera</option>
+									<option>Câmera 2</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="row">
 						<div class="col-xs-12">
 							<button class="btn bt-vermelho">
 								<img class="icon-photo" src="imgs/shape.png" alt="foto">
@@ -120,7 +140,7 @@
 					</div>
 				</div>
 				<div class="col-xs-2">
-					<div class="img-circle"></div>
+					<img class="img-circle" alt="foto">
 				</div>
 			</div>
 		</section>
@@ -152,7 +172,7 @@
 					</div>
 				</div>
 				<div class="col-xs-2">
-					<div class="img-circle"></div>
+					<img class="img-circle" alt="foto">
 				</div>
 			</div>
 		</section>

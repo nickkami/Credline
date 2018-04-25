@@ -79,14 +79,14 @@
                             </div>
                             <div class="row">
                                 <div class="col-xs-12 txt">
-                                    <span>Antes de reenviar, tenha certeza de que o número cadasreado está correto.</span>
+                                    <span>Antes de reenviar, tenha certeza de que o número cadastrado está correto.</span>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-xs-12">
                                     <div class="form-group">
                                         <label>TELEFONE</label>
-                                        <input type="text" class="form-control form-custom" placeholder="">
+                                        <input type="text" class="form-control form-custom sp_celphones" placeholder="">
                                     </div>
                                 </div>
                             </div>
@@ -144,6 +144,32 @@
                     </div>
                 </div>
             </div>
+
+            <div class="modal fade modal-alongado" id="modal-alert" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <!-- <h4 class="modal-title" id="myModalLabel">Modal title</h4> -->
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="alert alert-danger">
+                                        <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+                                    </div>
+                                    <div class="alert alert-warning">
+                                        <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- //Modais -->
         </section>
     </div>
