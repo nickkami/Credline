@@ -13,10 +13,10 @@
     <jsp:include page="includes/header.jsp" />
     <!-- //Header -->
     <div class="container">
-        <section class="impressao-cartao">
+        <section class="digitaCodigo">
             <div class="row">
                 <div class="col-xs-offset-2 col-xs-2">
-                    <img src="imgs/printblue-icon.png" alt="impressora">
+                    <img src="imgs/celular-icon.png" alt="celular">
                 </div>
             </div>
             <div class="row">
@@ -27,14 +27,14 @@
             </div>
             <div class="row box-botoes">
                 <div class="row">
-                    <div class="col-xs-offset-2 col-xs-10">
+                    <div class="col-xs-offset-2 col-xs-6">
                         <div class="form-group input-codigo">
                             <input type="text" class="form-control sms-ok" placeholder="Insira o código">
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-offset-2 col-xs-10 box-reenviar">
+                    <div class="col-xs-offset-2 col-xs-6 box-reenviar">
                         <a href="javascript:;">
                             <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>  
                             Reenviar código  
@@ -42,9 +42,17 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-offset-2 col-xs-10 box-semCelular">
+                    <div class="col-xs-offset-2 col-xs-6 box-semCelular">
                         <a href="javascript:;">
                             Cliente está sem o celular
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-offset-2 col-xs-6 box-botao">
+                        <a href="javascript:;" class="btn bt-vermelho">
+                            <i class="fa fa-sign-in" aria-hidden="true"></i> 
+                            <span>CONFIRMAR</span>
                         </a>
                     </div>
                 </div>

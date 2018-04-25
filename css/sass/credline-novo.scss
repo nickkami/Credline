@@ -1327,13 +1327,21 @@ section {
 	display: none;
 	top: 60px;
 }
-#modal-digitaCodigo {
+section.digitaCodigo {
+	margin-top: $respiro-topo;
 	.input-codigo input {
 		margin-top: 30px;
 		height: 70px;
 		text-align: center;
 		font-size: 24px;
 		color: #53b0f2;
+   }
+   .box-botao{
+	   margin-top: 20px;
+	   text-align: center;
+	   .btn.bt-vermelho{
+			font-size: 12px!important;
+	   }
    }
 	.form-control.sms-ok {
 		background: url("../imgs/check.png") no-repeat center right;

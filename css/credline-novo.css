@@ -1064,40 +1064,47 @@ section.produtos-servicos .box-impressaoContrato {
   display: none;
   top: 60px; }
 
-#modal-digitaCodigo .input-codigo input {
-  margin-top: 30px;
-  height: 70px;
-  text-align: center;
-  font-size: 24px;
-  color: #53b0f2; }
-#modal-digitaCodigo .form-control.sms-ok {
-  background: url("../imgs/check.png") no-repeat center right;
-  background-position: right 10px center;
-  padding-right: 10px;
-  border: solid thin #53b0f2; }
-#modal-digitaCodigo .form-control.sms-no {
-  background: url("../imgs/check-red.png") no-repeat center right;
-  background-position: right 10px center;
-  padding-right: 10px;
-  border: solid thin #FF3636; }
-#modal-digitaCodigo ::-webkit-input-placeholder {
-  text-align: center !important;
-  font-size: 24px; }
-#modal-digitaCodigo ::-moz-placeholder {
-  /* Firefox 19+ */
-  text-align: center !important;
-  font-size: 24px; }
-#modal-digitaCodigo :-ms-input-placeholder {
-  /* IE 10+ */
-  text-align: center !important;
-  font-size: 24px; }
-#modal-digitaCodigo :-moz-placeholder {
-  /* Firefox 18- */
-  text-align: center !important;
-  font-size: 24px; }
-#modal-digitaCodigo .box-reenviar, #modal-digitaCodigo .box-semCelular {
-  text-align: center;
-  margin-top: 20px; }
+section.digitaCodigo {
+  margin-top: 40px; }
+  section.digitaCodigo .input-codigo input {
+    margin-top: 30px;
+    height: 70px;
+    text-align: center;
+    font-size: 24px;
+    color: #53b0f2; }
+  section.digitaCodigo .box-botao {
+    margin-top: 20px;
+    text-align: center; }
+    section.digitaCodigo .box-botao .btn.bt-vermelho {
+      font-size: 12px !important; }
+  section.digitaCodigo .form-control.sms-ok {
+    background: url("../imgs/check.png") no-repeat center right;
+    background-position: right 10px center;
+    padding-right: 10px;
+    border: solid thin #53b0f2; }
+  section.digitaCodigo .form-control.sms-no {
+    background: url("../imgs/check-red.png") no-repeat center right;
+    background-position: right 10px center;
+    padding-right: 10px;
+    border: solid thin #FF3636; }
+  section.digitaCodigo ::-webkit-input-placeholder {
+    text-align: center !important;
+    font-size: 24px; }
+  section.digitaCodigo ::-moz-placeholder {
+    /* Firefox 19+ */
+    text-align: center !important;
+    font-size: 24px; }
+  section.digitaCodigo :-ms-input-placeholder {
+    /* IE 10+ */
+    text-align: center !important;
+    font-size: 24px; }
+  section.digitaCodigo :-moz-placeholder {
+    /* Firefox 18- */
+    text-align: center !important;
+    font-size: 24px; }
+  section.digitaCodigo .box-reenviar, section.digitaCodigo .box-semCelular {
+    text-align: center;
+    margin-top: 20px; }
 
 #modal-confiraNumero .box-reenviar {
   margin-top: 20px; }
