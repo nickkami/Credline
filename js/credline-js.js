@@ -22,7 +22,12 @@ $(document).ready(function () {
 		responsiveClass: true,
 		nav: true,
 		margin: 20
-	});
+    });
+    
+    //::Popover
+    $('#popover-propostaNegada').popover({
+        trigger: "hover",
+    });
 
 	//::Tooltip
 	$('[data-toggle="tooltip"]').tooltip()
@@ -80,7 +85,8 @@ $(document).ready(function () {
                         "</div>"+
                     "</div>"+
                     "<div class='row'>"+
-                        "<div class='col-xs-12'>"+
+                        "<div class='col-xs-6 parentesco'>Grau de Parentesco:</div>"+
+                        "<div class='col-xs-6'>"+
                             "<label id='modal-cartao-parente' class='txt-parente'></label>"+
                         "</div>"+
                     "</div>"+
@@ -91,7 +97,7 @@ $(document).ready(function () {
                                     "<label>CPF:</label>"+
                                 "</li>"+
                                 "<li>"+
-                                    "<label id='modal-cartao-cpf'>000.000.000-00</label>"+
+                                    "<label class='modal-cartao-cpf' id='modal-cartao-cpf'>000.000.000-00</label>"+
                                 "</li>"+
                             "</ul>"+
                         "</div>"+
@@ -101,7 +107,7 @@ $(document).ready(function () {
                                     "<label>Data de Nascimento:</label>"+
                                 "</li>"+
                                 "<li>"+
-                                    "<label id='modal-cartao-nascimento'>31/08/89</label>"+
+                                    "<label class='modal-cartao-nascimento' id='modal-cartao-nascimento'>31/08/89</label>"+
                                 "</li>"+
                             "</ul>"+
                         "</div>"+
@@ -161,6 +167,50 @@ $(document).ready(function () {
        $(this).toggleClass('active');
     });
 
+    //::Botao Selecionado
+    $(".btn.btn-default.bt-branco").on('click',function(){
+        var group = ".btn.btn-default.bt-branco[name='"+$(this).attr("name")+"']";
+        $(group).toggleClass("botao-selecionado",false);
+        $(this).toggleClass("botao-selecionado",true);
+    });
+
+
+    //::Possui Email
+    $(".area-possui-email").css('margin-top','60px');
+    $("#possuiEmail").on('click',function(){
+        $(".box-inputEmail").show();
+        $(".area-possui-email").css('margin-top','0px');
+    });
+    $("#naoPossuiEmail").on('click',function(){
+        $(".box-inputEmail").hide();
+        $(".area-possui-email").css('margin-top','60px');
+    });
+
+    //::Selects Cor
+    $('select').on('change',function(){
+        if ($(this).val()){
+            $(this).css('color', '#142d4e', 'font-size','24px');
+        }else{
+            $(this).css('color', '#919191');
+        }
+    });   
+
+    //::Botao Play
+    $(".area-bt-play").on('click',function(){
+        if($(".area-bt-play button i").hasClass('fa-play')){
+            $(".area-bt-play button i").removeClass('fa-play').addClass('fa-refresh fa-spin');
+        }else{
+            $(".area-bt-play button i").removeClass('fa-refresh fa-spin').addClass('fa-play');
+        }   
+    });
+
+
+    $(".bt-vermelho").on('click',function(){
+       $(this).prepend(
+           "<i class='fa fa-spinner fa-spin '></i>"
+       ).attr('disabled','disabled')
+    });
+
 });
 /****************** //DOCUMENT.READY*******************/
 
@@ -177,7 +227,7 @@ function mudarCor(t) {
         $(t).closest(".card-produto.adquirido").find(".box-selo").append(
             "<ul class='box-btn-adquirir'>"+
                 "<li>"+
-                    "<span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span>"+
+                    "<img src='imgs/check.png' alt='check'/>"+
                 "</li>"+
             "</ul>"
         )
@@ -236,9 +286,9 @@ function validacaoCep($cep){
 //::Loading
 function loading(){
     $(".loading").show();
-    $(".modal-backdrop.fade.in.back-load").show();
+    $(".back-load.fade.in").show();
     setTimeout(function(){
         $(".loading").hide();
-        $(".modal-backdrop.fade.in.back-load").hide();
+        $(".back-load.fade.in").hide();
     },2000 )
 };
